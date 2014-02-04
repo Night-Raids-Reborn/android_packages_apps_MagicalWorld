@@ -771,4 +771,7 @@
 
     <string name="torch_power_button_gesture_haptic_feedback_enable_title">Вибрировать при включении фонарика</string>
 
+    <string name="srec_enable_mic_title">Использовать микрофон при записи экрана</string>
+    <string name="srec_enable_mic_summary">Использовать микрофон как источник звука во время записи экрана</string>
+
 </resources>

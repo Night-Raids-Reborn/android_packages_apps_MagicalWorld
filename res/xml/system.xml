@@ -113,6 +113,12 @@
         android:defaultValue="1500"
         settings:units="@string/units_ms"/>
 
+    <mx.mdroid.magicalworld.preferences.SystemSettingSwitchPreference
+        android:key="srec_enable_mic"
+        android:title="@string/srec_enable_mic_title"
+        android:summary="@string/srec_enable_mic_summary"
+        android:defaultValue="false" />
+
     <ListPreference
         android:key="ringtone_focus_mode"
         android:title="@string/ringtone_focus_mode_title"

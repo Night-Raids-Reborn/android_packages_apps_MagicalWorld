@@ -771,4 +771,7 @@
 
     <string name="torch_power_button_gesture_haptic_feedback_enable_title">Вібрувати при ввімкненні ліхтарика</string>
 
+    <string name="srec_enable_mic_title">Використовувати мікрофон при записі екрану</string>
+    <string name="srec_enable_mic_summary">Використовувати мікрофон як джерело звуку під час запису екрану</string>
+
 </resources>

@@ -771,4 +771,7 @@
 
     <string name="torch_power_button_gesture_haptic_feedback_enable_title">Vibrate when toggling torch</string>
 
+    <string name="srec_enable_mic_title">Use microphone for screen recording</string>
+    <string name="srec_enable_mic_summary">Use microphone as audio input during screen recording</string>
+
 </resources>
