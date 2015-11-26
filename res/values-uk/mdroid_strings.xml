@@ -740,4 +740,6 @@
     <string name="slim_blacklist_add_apps_summary">Натисніть тут, щоб додати, натисніть на доданий додаток, щоб видалити</string>
     <string name="default_string">За замовчуванням</string>
 
+    <string name="aosp_recents_title">Меню нещодавніх додатків AOSP</string>
+
 </resources>

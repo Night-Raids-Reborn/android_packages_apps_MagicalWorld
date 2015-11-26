@@ -740,4 +740,6 @@
     <string name="slim_blacklist_add_apps_summary">Tap here to add, tap on added app to remove it</string>
     <string name="default_string">Stock</string>
 
+    <string name="aosp_recents_title">AOSP recents</string>
+
 </resources>

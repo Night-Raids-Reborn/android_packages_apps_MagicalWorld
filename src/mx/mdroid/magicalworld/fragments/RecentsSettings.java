@@ -17,6 +17,7 @@ import android.graphics.drawable.Drawable;
 import android.os.Bundle;
 import android.os.SystemProperties;
 import android.os.UserHandle;
+import android.support.v7.preference.PreferenceCategory;
 import android.support.v7.preference.ListPreference;
 import android.support.v7.preference.Preference;
 import android.support.v7.preference.PreferenceScreen;
@@ -55,6 +56,8 @@ public class RecentsSettings extends SettingsPreferenceFragment implements
     private SwitchPreference mRecentsClearAll;
     private static final String IMMERSIVE_RECENTS = "immersive_recents";
     private ListPreference mImmersiveRecents;
+    private PreferenceCategory mStockRecents;
+    private PreferenceCategory mSlimRecents;
     private SwitchPreference mSlimToggle;
 
     private final static String[] sSupportedActions = new String[] {
@@ -79,6 +82,9 @@ public class RecentsSettings extends SettingsPreferenceFragment implements
 
         ContentResolver resolver = getActivity().getContentResolver();
 
+        mStockRecents = (PreferenceCategory) findPreference("stock_recents");
+        mSlimRecents = (PreferenceCategory) findPreference("slim_recents");
+
         // clear all recents
         mRecentsClearAllLocation = (ListPreference) findPreference(RECENTS_CLEAR_ALL_LOCATION);
         int location = Settings.System.getIntForUser(resolver,
@@ -98,6 +104,7 @@ public class RecentsSettings extends SettingsPreferenceFragment implements
                 Settings.System.USE_SLIM_RECENTS, 0,
                 UserHandle.USER_CURRENT) == 1);
         mSlimToggle.setOnPreferenceChangeListener(this);
+        updateRecents();
     }
 
     @Override
@@ -121,10 +128,24 @@ public class RecentsSettings extends SettingsPreferenceFragment implements
             Settings.System.putIntForUser(resolver,
                     Settings.System.USE_SLIM_RECENTS, value ? 1 : 0,
                     UserHandle.USER_CURRENT);
+            updateRecents();
             return true;
         }
     return false;
 
+    }
+
+    private void updateRecents() {
+        boolean slimRecents = Settings.System.getIntForUser(getActivity().getContentResolver(),
+                Settings.System.USE_SLIM_RECENTS, 0, UserHandle.USER_CURRENT) == 1;
+
+        if (slimRecents) {
+            mSlimRecents.setEnabled(true);
+            mStockRecents.setEnabled(false);
+        } else {
+            mSlimRecents.setEnabled(true);
+            mStockRecents.setEnabled(true);
+        }
     }
 
     @Override
