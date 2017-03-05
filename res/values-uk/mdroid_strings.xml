@@ -758,6 +758,8 @@
 
     <string name="slim_recents_mem_display_color">Колір шкали використання ОЗП</string>
     <string name="slim_recents_mem_display_text_color">Колір тексту шкали використання ОЗП</string>
+    <string name="slim_recents_mem_display_long_click_clear_title">Довге натискання шкали використання ОЗП</string>
+    <string name="slim_recents_mem_display_long_click_clear_summary">Очищення меню нещодавних додатків довгим натисканням шкали використання ОЗП</string>
 
     <string name="aosp_recents_title">Меню нещодавніх додатків AOSP</string>
 

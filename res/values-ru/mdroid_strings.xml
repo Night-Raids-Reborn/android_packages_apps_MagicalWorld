@@ -758,6 +758,8 @@
 
     <string name="slim_recents_mem_display_color">Цвет шкалы использования ОЗУ</string>
     <string name="slim_recents_mem_display_text_color">Цвет текста шкалы использования ОЗУ</string>
+    <string name="slim_recents_mem_display_long_click_clear_title">Долгое нажатие шкалы использования ОЗУ</string>
+    <string name="slim_recents_mem_display_long_click_clear_summary">Очистка меню недавних приложений долгим нажатием шкалы использования ОЗУ</string>
 
     <string name="aosp_recents_title">Недавние AOSP</string>
 

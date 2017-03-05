@@ -758,6 +758,8 @@
 
     <string name="slim_recents_mem_display_color">Memory bar color</string>
     <string name="slim_recents_mem_display_text_color">Memory bar text color</string>
+    <string name="slim_recents_mem_display_long_click_clear_title">Memory bar longpress</string>
+    <string name="slim_recents_mem_display_long_click_clear_summary">Clear recents by long-pressing the memory bar</string>
 
     <string name="aosp_recents_title">AOSP recents</string>
 

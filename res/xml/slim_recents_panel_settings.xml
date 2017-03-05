@@ -66,6 +66,13 @@
             android:summary="@string/recents_show_membar_summary"
             android:defaultValue="false" />
 
+        <mx.mdroid.magicalworld.preferences.SystemSettingSwitchPreference
+            android:key="slim_recents_mem_display_long_click_clear"
+            android:title="@string/slim_recents_mem_display_long_click_clear_title"
+            android:summary="@string/slim_recents_mem_display_long_click_clear_summary"
+            android:defaultValue="false"
+            android:dependency="slim_recents_mem_display" />
+
         <net.margaritov.preference.colorpicker.ColorPickerPreference
             android:key="slim_mem_bar_color"
             android:title="@string/slim_recents_mem_display_color"
