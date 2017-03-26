@@ -66,6 +66,18 @@
             android:summary="@string/recents_show_membar_summary"
             android:defaultValue="false" />
 
+        <net.margaritov.preference.colorpicker.ColorPickerPreference
+            android:key="slim_mem_bar_color"
+            android:title="@string/slim_recents_mem_display_color"
+            android:defaultValue="0x00ffffff"
+            android:dependency="slim_recents_mem_display"/>
+
+        <net.margaritov.preference.colorpicker.ColorPickerPreference
+            android:key="slim_mem_text_color"
+            android:title="@string/slim_recents_mem_display_text_color"
+            android:defaultValue="0x00ffffff"
+            android:dependency="slim_recents_mem_display"/>
+
         <mx.mdroid.magicalworld.preferences.SystemSettingSwitchPreference
             android:key="slim_recents_corner_radius"
             android:title="@string/slim_recents_corner_radius_title"

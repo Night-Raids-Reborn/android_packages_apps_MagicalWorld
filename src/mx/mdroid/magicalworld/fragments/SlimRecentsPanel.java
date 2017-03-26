@@ -85,6 +85,10 @@ public class SlimRecentsPanel extends SettingsPreferenceFragment implements
             "recent_panel_bg_color";
     private static final String RECENT_CARD_BG_COLOR =
             "recent_card_bg_color";
+    private static final String SLIM_MEM_BAR_COLOR =
+            "slim_mem_bar_color";
+    private static final String SLIM_MEM_TEXT_COLOR =
+            "slim_mem_text_color";
 
     private final static String[] sSupportedActions = new String[] {
         "org.adw.launcher.THEMES",
@@ -106,6 +110,8 @@ public class SlimRecentsPanel extends SettingsPreferenceFragment implements
     private ListPreference mRecentPanelExpandedMode;
     private ColorPickerPreference mRecentPanelBgColor;
     private ColorPickerPreference mRecentCardBgColor;
+    private ColorPickerPreference mMemBarColor;
+    private ColorPickerPreference mMemTextColor;
 
     private AlertDialog mDialog;
     private ListView mListView;
@@ -182,6 +188,18 @@ public class SlimRecentsPanel extends SettingsPreferenceFragment implements
                 0x00ffffff);
         mRecentCardBgColor.setSummary(R.string.default_auto_string);
         mRecentCardBgColor.setNewPreviewColor(0x00ffffff);
+
+        Settings.System.putInt(getContext().getContentResolver(),
+                Settings.System.SLIM_MEM_BAR_COLOR,
+                0x00ffffff);
+        mMemBarColor.setSummary(R.string.default_auto_string);
+        mMemBarColor.setNewPreviewColor(0x00ffffff);
+
+        Settings.System.putInt(getContext().getContentResolver(),
+                Settings.System.SLIM_MEM_TEXT_COLOR,
+                0x00ffffff);
+        mMemTextColor.setSummary(R.string.default_auto_string);
+        mMemTextColor.setNewPreviewColor(0x00ffffff);
     }
 
     public boolean onPreferenceChange(Preference preference, Object newValue) {
@@ -227,6 +245,32 @@ public class SlimRecentsPanel extends SettingsPreferenceFragment implements
             Settings.System.putInt(getContext().getContentResolver(),
                     Settings.System.RECENT_CARD_BG_COLOR,
                     intHex);
+            return true;
+        } else if (preference == mMemBarColor) {
+            String hex = ColorPickerPreference.convertToARGB(
+                    Integer.valueOf(String.valueOf(newValue)));
+            if (hex.equals("#00ffffff")) {
+                preference.setSummary(R.string.default_string);
+            } else {
+                preference.setSummary(hex);
+            }
+            int intHex = ColorPickerPreference.convertToColorInt(hex);
+            Settings.System.putIntForUser(getContext().getContentResolver(),
+                    Settings.System.SLIM_MEM_BAR_COLOR,
+                    intHex, UserHandle.USER_CURRENT);
+            return true;
+        } else if (preference == mMemTextColor) {
+            String hex = ColorPickerPreference.convertToARGB(
+                    Integer.valueOf(String.valueOf(newValue)));
+            if (hex.equals("#00ffffff")) {
+                preference.setSummary(R.string.default_string);
+            } else {
+                preference.setSummary(hex);
+            }
+            int intHex = ColorPickerPreference.convertToColorInt(hex);
+            Settings.System.putIntForUser(getContext().getContentResolver(),
+                    Settings.System.SLIM_MEM_TEXT_COLOR,
+                    intHex, UserHandle.USER_CURRENT);
             return true;
         } else if (preference == mMaxApps) {
             Settings.System.putInt(getContext().getContentResolver(),
@@ -296,6 +340,30 @@ public class SlimRecentsPanel extends SettingsPreferenceFragment implements
             mRecentCardBgColor.setSummary(hexColorCard);
         }
         mRecentCardBgColor.setNewPreviewColor(intColorCard);
+
+        mMemBarColor = (ColorPickerPreference) findPreference(SLIM_MEM_BAR_COLOR);
+        mMemBarColor.setOnPreferenceChangeListener(this);
+        final int intMemColor = Settings.System.getInt(getContext().getContentResolver(),
+                Settings.System.SLIM_MEM_BAR_COLOR, 0x00ffffff);
+        String hexMemColor = String.format("#%08x", (0x00ffffff & intMemColor));
+        if (hexMemColor.equals("#00ffffff")) {
+            mMemBarColor.setSummary(R.string.default_auto_string);
+        } else {
+            mMemBarColor.setSummary(hexMemColor);
+        }
+        mMemBarColor.setNewPreviewColor(intMemColor);
+
+        mMemTextColor = (ColorPickerPreference) findPreference(SLIM_MEM_TEXT_COLOR);
+        mMemTextColor.setOnPreferenceChangeListener(this);
+        final int intTextColor = Settings.System.getInt(getContext().getContentResolver(),
+                Settings.System.SLIM_MEM_TEXT_COLOR, 0x00ffffff);
+        String hexTextColor = String.format("#%08x", (0x00ffffff & intTextColor));
+        if (hexTextColor.equals("#00ffffff")) {
+            mMemTextColor.setSummary(R.string.default_auto_string);
+        } else {
+            mMemTextColor.setSummary(hexTextColor);
+        }
+        mMemTextColor.setNewPreviewColor(intTextColor);
 
         mRecentPanelScale =
                 (CustomSeekBarPreference) findPreference(RECENT_PANEL_SCALE);

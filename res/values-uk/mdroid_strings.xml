@@ -756,6 +756,9 @@
     <string name="default_string">За замовчуванням</string>
     <string name="slim_recents_hints_footer">Щоб очистити всі додатки, зробіть щипок по панелі. Для блокування очищення додатку, затисніть його іконку, щоб позначити.\n\nДля виклику додаткових функцій, таких як мультивіконний режим або закриття додатку, утримуйте картку додатку.</string>
 
+    <string name="slim_recents_mem_display_color">Колір шкали використання ОЗП</string>
+    <string name="slim_recents_mem_display_text_color">Колір тексту шкали використання ОЗП</string>
+
     <string name="aosp_recents_title">Меню нещодавніх додатків AOSP</string>
 
     <string name="long_press_power_torch_delay_title">Таймаут довгого натискання для ввімкнення ліхтарика</string>

@@ -756,6 +756,9 @@
     <string name="default_string">Stock</string>
     <string name="slim_recents_hints_footer">To clear all apps, pinch-in with two fingers on the panel. To block an app from being cleared, long press on its icon to star it.\n\nFor additional recents features such as multiwindow or to kill an app, long press on any app window in the panel.</string>
 
+    <string name="slim_recents_mem_display_color">Memory bar color</string>
+    <string name="slim_recents_mem_display_text_color">Memory bar text color</string>
+
     <string name="aosp_recents_title">AOSP recents</string>
 
     <string name="long_press_power_torch_delay_title">Longpress delay to toggle torch</string>

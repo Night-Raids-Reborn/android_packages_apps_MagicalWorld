@@ -756,6 +756,9 @@
     <string name="default_string">По умолчанию</string>
     <string name="slim_recents_hints_footer">Чтобы очистить все приложения, сделайте щипок по панели. Для блокировки очистки приложения, зажмите его иконку, чтобы пометить.\n\nДля вызова дополнительных функций, таких как мультиоконный режим или закрытие приложения, удерживайте карточку приложения.</string>
 
+    <string name="slim_recents_mem_display_color">Цвет шкалы использования ОЗУ</string>
+    <string name="slim_recents_mem_display_text_color">Цвет текста шкалы использования ОЗУ</string>
+
     <string name="aosp_recents_title">Недавние AOSP</string>
 
     <string name="long_press_power_torch_delay_title">Таймаут долгого нажатия для включения фонарика</string>
