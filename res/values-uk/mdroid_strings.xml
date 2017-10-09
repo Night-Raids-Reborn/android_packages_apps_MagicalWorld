@@ -397,7 +397,11 @@
 
     <!-- Disable QS on secure Lockscreen -->
     <string name="lockscreen_qs_disabled_title">Швидкі налаштування на екрані блокування</string>
-    <string name="lockscreen_qs_disabled_summary">Вимкнути панель швидких налаштувань на захищеному екрані блокування. Також будуть вимкнені ярлики на екрані блокування.</string>
+    <string name="lockscreen_qs_disabled_summary">Вимкнути панель швидких налаштувань на захищеному екрані блокування.</string>
+
+    <!-- Hide Lockscreen shortcuts on secure Lockscreen -->
+    <string name="lockscreen_hide_shortcuts_title">Ярлики екрану блокування</string>
+    <string name="lockscreen_hide_shortcuts_summary">Приховати ярлики на захищеному екрані блокування</string>
 
     <string name="units_ms">" мс"</string>
 
