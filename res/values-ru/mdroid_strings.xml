@@ -711,4 +711,33 @@
     <string name="hall_sensor_enabled_title">Датчик Холла</string>
     <string name="hall_sensor_enabled_summary">Включить датчик Холла</string>
 
+    <!-- Slim Recents panel -->
+    <string name="slim_recents_title">Недавние приложения в стиле Slim</string>
+    <string name="use_slim_recents_title">Разрешить меню недавних приложений в стиле Slim</string>
+    <string name="use_slim_recents_summary">Использовать меню недавних приложений в стиле Slim вместо меню приложений по умолчанию</string>
+    <string name="slim_recents_settings_title">Настройки меню недавних приложений в стиле Slim</string>
+    <string name="slim_recents_settings_summary">Посмотреть настройки для меню недавних приложений в стиле Slim</string>
+    <string name="recents_max_apps_title">Максимальное количество приложений</string>
+    <string name="recent_panel_scale_title">Размер</string>
+    <string name="recent_panel_expanded_mode_title">Предварительный просмотр расширенного режима</string>
+    <string name="recent_panel_expanded_mode_summary">Расширенный предпросмотр недавних приложений</string>
+    <string name="recent_panel_expanded_mode_auto">Авто (по умолчанию)</string>
+    <string name="recent_panel_expanded_mode_always">Все превью</string>
+    <string name="recent_panel_expanded_mode_never">Выключено</string>
+    <string name="recent_panel_bg_color_title">Цвет фона панели</string>
+    <string name="recent_card_bg_color_title">Цвет фона карточки</string>
+    <string name="recent_reset_title">Сбросить к цветам по умолчанию</string>
+    <string name="recent_reset_confirm">Вы действительно хотите сбросить настройки Slim Recents?</string>
+    <string name="default_auto_string">По умолчанию (управляемое приложением)</string>
+    <string name="slim_recents_corner_radius_title">Использовать закругленные углы для карточек</string>
+    <!-- ATTENTION: RTL languages need to replace left with right -->
+    <string name="recent_panel_lefty_mode_title">Отображать у левого края</string>
+    <string name="recent_panel_lefty_mode_summary">Показывать панель с левой стороны экрана</string>
+    <string name="slim_blacklist_apps_cat_title">Чёрный список</string>
+    <string name="slim_blacklist_apps_title">Чёрный список приложений</string>
+    <string name="slim_blacklist_apps_summary">Приложения, которые не отображаются на панели</string>
+    <string name="slim_blacklist_add_apps_title">Добавить приложение</string>
+    <string name="slim_blacklist_add_apps_summary">Нажмите здесь, чтобы добавить, нажмите на добавленное приложение, чтобы удалить</string>
+    <string name="default_string">По умолчанию</string>
+
 </resources>

@@ -25,7 +25,7 @@
     <string name="quicksettings_title">Quick Settings</string>
     <string name="gesture_category">Gestures</string>
     <string name="device_part_title">Device features</string>
- 
+
     <!-- Statusbar Tuner -->
     <string name="statusbar_items_title">Statusbar items</string>
 
@@ -34,7 +34,7 @@
     <string name="reset">Reset</string>
     <string name="cancel">Cancel</string>
     <string name="save">Save</string>
-  
+
     <!-- Recents panel settings -->
     <string name="show_clear_all_recents_button_title">Clear all button</string>
     <string name="show_clear_all_recents_button_summary">Show clear all button</string>
@@ -59,8 +59,8 @@
     <string name="hide_apps_from_recents_title">Hidden apps</string>
     <string name="hide_from_recents_add_app">Add App</string>
     <string name="hide_apps_from_recents_summary">Pick which apps to exclude from the recents panel</string>
-   
-     <!-- Global Actions -->
+
+    <!-- Global Actions -->
     <string name="global_actions_title">Power menu</string>
     <string name="global_actions_summary">Select what to show when you press the power button</string>
     <string name="global_actions_power">Power</string>
@@ -73,7 +73,7 @@
     <string name="global_actions_flashlight">Flashlight</string>
     <string name="global_actions_advanced_reboot_title">Enable advanced restart</string>
     <string name="global_actions_advanced_reboot_summary">When restarting also show options for recovery and bootloader</string>
-    
+
     <!-- tap-to-sleep -->
     <string name="double_tap_status_bar_sleep_title">Double tap statusbar to sleep</string>
     <string name="double_tap_status_bar_sleep_summary">Double tap status bar to put the device to sleep</string>
@@ -711,6 +711,33 @@
     <string name="hall_sensor_enabled_title">HALL Sensor</string>
     <string name="hall_sensor_enabled_summary">Enable HALL Sensor</string>
 
+    <!-- Slim Recents panel -->
+    <string name="slim_recents_title">Slim recents</string>
+    <string name="use_slim_recents_title">Use alternative recents panel</string>
+    <string name="use_slim_recents_summary">Use Slim Recents instead of the default recents view</string>
+    <string name="slim_recents_settings_title">Slim recents settings</string>
+    <string name="slim_recents_settings_summary">View the settings for Slim Recents</string>
+    <string name="recents_max_apps_title">Max allowed apps</string>
+    <string name="recent_panel_scale_title">Size</string>
+    <string name="recent_panel_expanded_mode_title">Previews expanded mode</string>
+    <string name="recent_panel_expanded_mode_summary">Recent tasks expanded preview mode</string>
+    <string name="recent_panel_expanded_mode_auto">Auto (default)</string>
+    <string name="recent_panel_expanded_mode_always">All previews</string>
+    <string name="recent_panel_expanded_mode_never">Disabled</string>
+    <string name="recent_panel_bg_color_title">Panel background color</string>
+    <string name="recent_card_bg_color_title">Card background color</string>
+    <string name="recent_reset_title">Reset to stock color</string>
+    <string name="recent_reset_confirm">Are you sure you want to reset Slim Recent to stock color?</string>
+    <string name="default_auto_string">Default (app based)</string>
+    <string name="slim_recents_corner_radius_title">Use round corners for cards</string>
+    <!-- ATTENTION: RTL languages need to replace left with right -->
+    <string name="recent_panel_lefty_mode_title">Show on the left edge</string>
+    <string name="recent_panel_lefty_mode_summary">Show recent apps panel on the left edge</string>
+    <string name="slim_blacklist_apps_cat_title">Blacklist</string>
+    <string name="slim_blacklist_apps_title">Apps blacklist</string>
+    <string name="slim_blacklist_apps_summary">Apps to not show in the panel</string>
+    <string name="slim_blacklist_add_apps_title">Add app</string>
+    <string name="slim_blacklist_add_apps_summary">Tap here to add, tap on added app to remove it</string>
+    <string name="default_string">Stock</string>
+
 </resources>
-
-

@@ -55,6 +55,7 @@ public class RecentsSettings extends SettingsPreferenceFragment implements
     private SwitchPreference mRecentsClearAll;
     private static final String IMMERSIVE_RECENTS = "immersive_recents";
     private ListPreference mImmersiveRecents;
+    private SwitchPreference mSlimToggle;
 
     private final static String[] sSupportedActions = new String[] {
         "org.adw.launcher.THEMES",
@@ -91,22 +92,35 @@ public class RecentsSettings extends SettingsPreferenceFragment implements
                 resolver, Settings.System.IMMERSIVE_RECENTS, 0)));
         mImmersiveRecents.setSummary(mImmersiveRecents.getEntry());
         mImmersiveRecents.setOnPreferenceChangeListener(this);
+
+        mSlimToggle = (SwitchPreference) findPreference("use_slim_recents");
+        mSlimToggle.setChecked(Settings.System.getIntForUser(resolver,
+                Settings.System.USE_SLIM_RECENTS, 0,
+                UserHandle.USER_CURRENT) == 1);
+        mSlimToggle.setOnPreferenceChangeListener(this);
     }
 
     @Override
-    public boolean onPreferenceChange(Preference preference, Object objValue) {
+    public boolean onPreferenceChange(Preference preference, Object newValue) {
+        ContentResolver resolver = getActivity().getContentResolver();
         if (preference == mRecentsClearAllLocation) {
-            int location = Integer.valueOf((String) objValue);
-            int index = mRecentsClearAllLocation.findIndexOfValue((String) objValue);
-            Settings.System.putIntForUser(getActivity().getContentResolver(),
+            int location = Integer.valueOf((String) newValue);
+            int index = mRecentsClearAllLocation.findIndexOfValue((String) newValue);
+            Settings.System.putIntForUser(resolver,
                     Settings.System.RECENTS_CLEAR_ALL_LOCATION, location, UserHandle.USER_CURRENT);
             mRecentsClearAllLocation.setSummary(mRecentsClearAllLocation.getEntries()[index]);
         return true;
         } else if (preference == mImmersiveRecents) {
-            Settings.System.putInt(getContentResolver(), Settings.System.IMMERSIVE_RECENTS,
-                    Integer.valueOf((String) objValue));
-            mImmersiveRecents.setValue(String.valueOf(objValue));
+            Settings.System.putInt(resolver, Settings.System.IMMERSIVE_RECENTS,
+                    Integer.valueOf((String) newValue));
+            mImmersiveRecents.setValue(String.valueOf(newValue));
             mImmersiveRecents.setSummary(mImmersiveRecents.getEntry());
+            return true;
+        } else if (preference == mSlimToggle) {
+            boolean value = (Boolean) newValue;
+            Settings.System.putIntForUser(resolver,
+                    Settings.System.USE_SLIM_RECENTS, value ? 1 : 0,
+                    UserHandle.USER_CURRENT);
             return true;
         }
     return false;

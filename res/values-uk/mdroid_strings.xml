@@ -711,4 +711,33 @@
     <string name="hall_sensor_enabled_title">Датчик Холла</string>
     <string name="hall_sensor_enabled_summary">Увімкнути датчик Холла</string>
 
+    <!-- Slim Recents panel -->
+    <string name="slim_recents_title">Меню нещодавніх додатків Slim</string>
+    <string name="use_slim_recents_title">Нещодавні додатки від Slim</string>
+    <string name="use_slim_recents_summary">Використовувати меню нещодавніх додатків від Slim за замовчуванням</string>
+    <string name="slim_recents_settings_title">Налаштування нещодавніх додатків від Slim</string>
+    <string name="slim_recents_settings_summary">Змінити налаштування нещодавніх додатків від Slim</string>
+    <string name="recents_max_apps_title">Максимально допустима кількість додатків</string>
+    <string name="recent_panel_scale_title">Розмір</string>
+    <string name="recent_panel_expanded_mode_title">Розширений режим</string>
+    <string name="recent_panel_expanded_mode_summary">Розширений попередній перегляд нещодавніх додатків</string>
+    <string name="recent_panel_expanded_mode_auto">Авто (за замовчуванням)</string>
+    <string name="recent_panel_expanded_mode_always">Всі прев\'ю</string>
+    <string name="recent_panel_expanded_mode_never">Вимкнено</string>
+    <string name="recent_panel_bg_color_title">Колір фону панелі</string>
+    <string name="recent_card_bg_color_title">Колір фону картки</string>
+    <string name="recent_reset_title">Скидання налаштувань кольору</string>
+    <string name="recent_reset_confirm">Ви дійсно хочете скинути колір панелі Slim на стандарний?</string>
+    <string name="default_auto_string">За замовчуванням</string>
+    <string name="slim_recents_corner_radius_title">Використовувати закруглені кути для карток</string>
+    <!-- ATTENTION: RTL languages ​​need to replace left with right -->
+    <string name="recent_panel_lefty_mode_title">Нещодавні додатки зліва</string>
+    <string name="recent_panel_lefty_mode_summary">Показувати панель нещодавніх додатків зліва</string>
+    <string name="slim_blacklist_apps_cat_title">Чорний список</string>
+    <string name="slim_blacklist_apps_title">Чорний список додатків</string>
+    <string name="slim_blacklist_apps_summary">Додатки, які не відображаються на панелі</string>
+    <string name="slim_blacklist_add_apps_title">Додати додаток</string>
+    <string name="slim_blacklist_add_apps_summary">Натисніть тут, щоб додати, натисніть на доданий додаток, щоб видалити</string>
+    <string name="default_string">За замовчуванням</string>
+
 </resources>
