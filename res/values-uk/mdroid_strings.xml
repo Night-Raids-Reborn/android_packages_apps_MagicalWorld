@@ -723,7 +723,7 @@
     <string name="recent_panel_expanded_mode_summary">Розширений попередній перегляд нещодавніх додатків</string>
     <string name="recent_panel_expanded_mode_auto">Авто (за замовчуванням)</string>
     <string name="recent_panel_expanded_mode_always">Всі прев\'ю</string>
-    <string name="recent_panel_expanded_mode_never">Вимкнено</string>
+    <string name="recent_panel_expanded_mode_never">Вимкнено (режим швидкої обробки)</string>
     <string name="recent_panel_bg_color_title">Колір фону панелі</string>
     <string name="recent_card_bg_color_title">Колір фону картки</string>
     <string name="recent_reset_title">Скидання налаштувань кольору</string>

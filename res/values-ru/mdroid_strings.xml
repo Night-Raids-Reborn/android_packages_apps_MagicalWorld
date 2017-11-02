@@ -723,7 +723,7 @@
     <string name="recent_panel_expanded_mode_summary">Расширенный предпросмотр недавних приложений</string>
     <string name="recent_panel_expanded_mode_auto">Авто (по умолчанию)</string>
     <string name="recent_panel_expanded_mode_always">Все превью</string>
-    <string name="recent_panel_expanded_mode_never">Выключено</string>
+    <string name="recent_panel_expanded_mode_never">Выключено (режим быстрой обработки)</string>
     <string name="recent_panel_bg_color_title">Цвет фона панели</string>
     <string name="recent_card_bg_color_title">Цвет фона карточки</string>
     <string name="recent_reset_title">Сбросить к цветам по умолчанию</string>
