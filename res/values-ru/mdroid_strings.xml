@@ -776,4 +776,14 @@
 
     <string name="pie_volume_dialog_title">Панель громкости в стиле Android P</string>
 
+    <!-- Hide Lockscreen clock, date, & alarm -->
+    <string name="lockscreen_item_title">Элементы на заблокированном экране</string>
+    <string name="lockscreen_item_summary">Настройка видимости элементов на экране блокировки</string>
+    <string name="hide_lockscreen_clock_title">Виджет часов</string>
+    <string name="hide_lockscreen_clock_summary">Изменение видимости виджета часов</string>
+    <string name="hide_lockscreen_date_title">Виджет даты</string>
+    <string name="hide_lockscreen_date_summary">Изменение видимости даты под виджетом часов</string>
+    <string name="hide_lockscreen_alarm_title">Текст будильника</string>
+    <string name="hide_lockscreen_alarm_summary">Изменение видимости текста будильника под виджетом часов</string>
+
 </resources>

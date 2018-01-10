@@ -25,6 +25,12 @@
     </Preference>
 
     <Preference
+        android:key="lockscreen_item"
+        android:title="@string/lockscreen_item_title"
+        android:summary="@string/lockscreen_item_summary"
+        android:fragment="mx.mdroid.magicalworld.fragments.LockscreenItemSettings" />
+
+    <Preference
         android:key="lockscreen_weather"
         android:title="@string/lock_screen_weather_settings_title"
         android:fragment="mx.mdroid.magicalworld.fragments.LockScreenWeatherSettings" />
