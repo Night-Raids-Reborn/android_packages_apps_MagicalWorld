@@ -76,4 +76,19 @@
         android:entryValues="@array/clock_date_position_values"
         android:dependency="clock_date_display" />
 
+    <mx.mdroid.magicalworld.preferences.CustomSeekBarPreference
+        android:key="status_bar_clock_size"
+        android:title="@string/status_bar_clock_font_size_title"
+        android:max="23"
+        settings:min="4"
+        android:defaultValue="14"/>
+
+    <ListPreference
+        android:key="status_bar_clock_font_style"
+        android:dialogTitle="@string/status_bar_clock_font_style_title"
+        android:title="@string/status_bar_clock_font_style_title"
+        android:entries="@array/status_bar_clock_font_style_entries"
+        android:entryValues="@array/status_bar_clock_font_style_values"
+        android:defaultValue="0" />
+
 </PreferenceScreen>

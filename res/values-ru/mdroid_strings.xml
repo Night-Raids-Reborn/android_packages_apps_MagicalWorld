@@ -832,4 +832,32 @@
     <string name="soft_reboot_title">Перезагрузка</string>
     <string name="soft_reboot_message">Идет мягкая перезагрузка, наберитесь терпения</string>
 
+    <string name="status_bar_clock_font_size_title">Размер шрифта</string>
+    <string name="status_bar_clock_font_style_title">Шрифт</string>
+    <string name="status_bar_clock_font_normal">Нормальный</string>
+    <string name="status_bar_clock_font_italic">Курсив</string>
+    <string name="status_bar_clock_font_bold">Жирный</string>
+    <string name="status_bar_clock_font_bold_italic">Жирный курсив</string>
+    <string name="status_bar_clock_font_light">Легкий</string>
+    <string name="status_bar_clock_font_light_italic">Легкий курсив</string>
+    <string name="status_bar_clock_font_thin">Тонкий</string>
+    <string name="status_bar_clock_font_thin_italic">Тонкий курсив</string>
+    <string name="status_bar_clock_font_condensed">Уплотнённый</string>
+    <string name="status_bar_clock_font_condensed_italic">Уплотнённый курсив</string>
+    <string name="status_bar_clock_font_condensed_light">Уплотнённый легкий</string>
+    <string name="status_bar_clock_font_condensed_light_italic">Уплотнённый легкий курсив</string>
+    <string name="status_bar_clock_font_condensed_bold">Уплотненный жирный</string>
+    <string name="status_bar_clock_font_condensed_bold_italic">Уплотнённый жирный курсив</string>
+    <string name="status_bar_clock_font_medium">Средний</string>
+    <string name="status_bar_clock_font_medium_italic">Средний курсив</string>
+    <string name="status_bar_clock_font_black">Черный</string>
+    <string name="status_bar_clock_font_black_italic">Черный курсив</string>
+    <string name="status_bar_clock_font_dancingscript">DancingScript</string>
+    <string name="status_bar_clock_font_dancingscript_bold">DancingScript жирный</string>
+    <string name="status_bar_clock_font_comingsoon">ComingSoon</string>
+    <string name="status_bar_clock_font_notoserif">NotoSerif обычный</string>
+    <string name="status_bar_clock_font_notoserif_italic">NotoSerif курсив</string>
+    <string name="status_bar_clock_font_notoserif_bold">NotoSerif жирный</string>
+    <string name="status_bar_clock_font_notoserif_bold_italic">NotoSerif жирный курсив</string>
+
 </resources>
