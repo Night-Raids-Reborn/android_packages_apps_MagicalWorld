@@ -739,6 +739,7 @@
     <string name="slim_blacklist_add_apps_title">Добавить приложение</string>
     <string name="slim_blacklist_add_apps_summary">Нажмите здесь, чтобы добавить, нажмите на добавленное приложение, чтобы удалить</string>
     <string name="default_string">По умолчанию</string>
+    <string name="slim_recents_hints_footer">Чтобы очистить все приложения, сделайте щипок по панели. Для блокировки очистки приложения, зажмите его иконку, чтобы пометить.\n\nДля вызова дополнительных функций, таких как мультиоконный режим или закрытие приложения, удерживайте карточку приложения.</string>
 
     <string name="aosp_recents_title">Недавние AOSP</string>
 

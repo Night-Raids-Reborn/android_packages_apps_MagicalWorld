@@ -739,6 +739,7 @@
     <string name="slim_blacklist_add_apps_title">Додати додаток</string>
     <string name="slim_blacklist_add_apps_summary">Натисніть тут, щоб додати, натисніть на доданий додаток, щоб видалити</string>
     <string name="default_string">За замовчуванням</string>
+    <string name="slim_recents_hints_footer">Щоб очистити всі додатки, зробіть щипок по панелі. Для блокування очищення додатку, затисніть його іконку, щоб позначити.\n\nДля виклику додаткових функцій, таких як мультивіконний режим або закриття додатку, утримуйте картку додатку.</string>
 
     <string name="aosp_recents_title">Меню нещодавніх додатків AOSP</string>
 
