@@ -332,7 +332,7 @@ public class StylePreferences extends SettingsPreferenceFragment {
                   finish();
                   Toast.makeText(getContext(), R.string.theme_applied_toast, Toast.LENGTH_SHORT).show();
               }
-        }, 2000);
+        }, 3000);
     }
 
     private void setStyleIcon(int value) {
