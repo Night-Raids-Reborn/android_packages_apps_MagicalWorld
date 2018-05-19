@@ -781,8 +781,19 @@
     <string name="lockscreen_item_summary">Налаштування видимості елементів на екрані блокування</string>
     <string name="hide_lockscreen_clock_title">Віджет годинника</string>
     <string name="hide_lockscreen_clock_summary">Зміна видимості віджета годинника</string>
+    <string name="lockscreen_clock_selection_title">Стиль годинника</string>
+    <string name="lockscreen_clock_selection_digital">За замовчуванням</string>
+    <string name="lockscreen_clock_selection_digital_bold">Цифровий (жирний)</string>
+    <string name="lockscreen_clock_selection_analog">Аналоговий</string>
+    <string name="lockscreen_clock_selection_analog_deadpool">Аналоговий (deadpool)</string>
+    <string name="lockscreen_clock_selection_sammy">Вертикальний</string>
+    <string name="lockscreen_clock_selection_sammy_bold">Вертикальний (жирний)</string>
     <string name="hide_lockscreen_date_title">Віджет дати</string>
     <string name="hide_lockscreen_date_summary">Зміна видимості дати під віджетом годинника</string>
+    <string name="lockscreen_date_selection_title">Стиль дати</string>
+    <string name="lockscreen_date_selection_default">За замовчуванням</string>
+    <string name="lockscreen_date_selection_str_box">Напівпрозорий блок</string>
+    <string name="lockscreen_date_selection_str_round">Напівпрозорий блок (закруглений)</string>
     <string name="hide_lockscreen_alarm_title">Текст будильника</string>
     <string name="hide_lockscreen_alarm_summary">Зміна видимості тексту будильника під віджетом годинника</string>
 
