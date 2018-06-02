@@ -791,7 +791,8 @@
     <string name="hide_lockscreen_date_title">Віджет дати</string>
     <string name="hide_lockscreen_date_summary">Зміна видимості дати під віджетом годинника</string>
     <string name="lockscreen_date_selection_title">Стиль дати</string>
-    <string name="lockscreen_date_selection_default">За замовчуванням</string>
+    <string name="lockscreen_date_selection_default_aosp">За замовчуванням</string>
+    <string name="lockscreen_date_selection_default">За замовчуванням (більшого розміру)</string>
     <string name="lockscreen_date_selection_str_box">Напівпрозорий блок</string>
     <string name="lockscreen_date_selection_str_round">Напівпрозорий блок (закруглений)</string>
     <string name="hide_lockscreen_alarm_title">Текст будильника</string>
