@@ -784,10 +784,9 @@
     <string name="lockscreen_clock_selection_title">Стиль годинника</string>
     <string name="lockscreen_clock_selection_digital">За замовчуванням</string>
     <string name="lockscreen_clock_selection_digital_bold">Цифровий (жирний)</string>
-    <string name="lockscreen_clock_selection_analog">Аналоговий</string>
-    <string name="lockscreen_clock_selection_analog_deadpool">Аналоговий (deadpool)</string>
     <string name="lockscreen_clock_selection_sammy">Вертикальний</string>
     <string name="lockscreen_clock_selection_sammy_bold">Вертикальний (жирний)</string>
+    <string name="lockscreen_clock_selection_analog">Аналоговий</string>
     <string name="hide_lockscreen_date_title">Віджет дати</string>
     <string name="hide_lockscreen_date_summary">Зміна видимості дати під віджетом годинника</string>
     <string name="lockscreen_date_selection_title">Стиль дати</string>

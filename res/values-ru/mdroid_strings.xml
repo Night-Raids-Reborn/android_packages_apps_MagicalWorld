@@ -784,10 +784,9 @@
     <string name="lockscreen_clock_selection_title">Стиль часов</string>
     <string name="lockscreen_clock_selection_digital">По умолчанию</string>
     <string name="lockscreen_clock_selection_digital_bold">Цифровые (жирные)</string>
-    <string name="lockscreen_clock_selection_analog">Аналоговые</string>
-    <string name="lockscreen_clock_selection_analog_deadpool">Аналоговые (deadpool)</string>
     <string name="lockscreen_clock_selection_sammy">Вертикальные</string>
     <string name="lockscreen_clock_selection_sammy_bold">Вертикальные (жирные)</string>
+    <string name="lockscreen_clock_selection_analog">Аналоговые</string>
     <string name="hide_lockscreen_date_title">Виджет даты</string>
     <string name="hide_lockscreen_date_summary">Изменение видимости даты под виджетом часов</string>
     <string name="lockscreen_date_selection_title">Стиль даты</string>
