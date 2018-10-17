@@ -235,6 +235,13 @@
     <string name="notification_dark">Темний</string>
     <string name="notification_black">Чорний</string>
 
+    <!-- QS tile styles -->
+    <string name="qs_tile_style_title">Стиль плиток швидких налаштувань</string>
+    <string name="qstile_default">За замовчуванням</string>
+    <string name="qstile_circle_trim">Коло з окантовкою</string>
+    <string name="qstile_dual_tone_circle">Двотонове коло</string>
+    <string name="qstile_squircle_trim">Квадрат з округленими кутами і окантовкою</string>
+
     <!-- QS rows and columns -->
     <string name="qs_rows_columns_title">Рядки і стовпці</string>
     <string name="qs_rows_portrait_title">Кількість рядків (портрет.)</string>

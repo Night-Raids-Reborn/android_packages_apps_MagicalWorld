@@ -36,12 +36,14 @@ public class QuickSettings extends SettingsPreferenceFragment implements
     private static final String PREF_SMART_PULLDOWN = "smart_pulldown";
     private static final String QS_TILE_TINTING = "qs_tile_tinting_enable";
     private static final String QS_TILE_TITLE_TINTING = "qs_tile_title_tinting_enable";
+    private static final String QS_TILE_STYLE = "qs_tile_style";
 
     private CustomSeekBarPreference mQsPanelAlpha;
     private ListPreference mQuickPulldown;
     ListPreference mSmartPulldown;
     private SwitchPreference mEnableQsTileTinting;
     private SwitchPreference mEnableQsTileTitleTinting;
+    private ListPreference mQsTileStyle;
 
     @Override
     public void onCreate(Bundle icicle) {
@@ -83,6 +85,20 @@ public class QuickSettings extends SettingsPreferenceFragment implements
         mEnableQsTileTitleTinting.setChecked(Settings.System.getInt(resolver,
                 Settings.System.QS_TILE_TITLE_TINTING_ENABLE, 0) != 0);
         mEnableQsTileTitleTinting.setOnPreferenceChangeListener(this);
+
+        mQsTileStyle = (ListPreference) findPreference(QS_TILE_STYLE);
+        int qsTileStyle = Settings.System.getIntForUser(resolver,
+                Settings.System.QS_TILE_STYLE, 0,
+  	        UserHandle.USER_CURRENT);
+        int valueIndex = mQsTileStyle.findIndexOfValue(String.valueOf(qsTileStyle));
+        mQsTileStyle.setValueIndex(valueIndex >= 0 ? valueIndex : 0);
+        mQsTileStyle.setSummary(mQsTileStyle.getEntry());
+        mQsTileStyle.setOnPreferenceChangeListener(this);
+        if (qsTileStyle == 0) {
+            mEnableQsTileTinting.setEnabled(true);
+        } else {
+            mEnableQsTileTinting.setEnabled(false);
+        }
     }
 
     private void updatePulldownSummary(int value) {
@@ -149,6 +165,17 @@ public class QuickSettings extends SettingsPreferenceFragment implements
             Settings.System.putInt(resolver,
                     Settings.System.QS_TILE_TITLE_TINTING_ENABLE, value ? 1 : 0);
             MDroidUtils.showSystemUiRestartDialog(getContext());
+            return true;
+        } else if (preference == mQsTileStyle) {
+            int qsTileStyleValue = Integer.valueOf((String) newValue);
+            Settings.System.putIntForUser(resolver, Settings.System.QS_TILE_STYLE,
+                    qsTileStyleValue, UserHandle.USER_CURRENT);
+            mQsTileStyle.setSummary(mQsTileStyle.getEntries()[qsTileStyleValue]);
+            if (qsTileStyleValue == 0) {
+                mEnableQsTileTinting.setEnabled(true);
+            } else {
+                mEnableQsTileTinting.setEnabled(false);
+            }
             return true;
         }
         return false;
