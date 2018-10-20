@@ -115,6 +115,9 @@
     <string name="clock_date_style_lowercase">Нижній регістр</string>
     <string name="clock_date_style_uppercase">Верхній регістр</string>
     <string name="clock_date_format_custom">Користувацький java-формат</string>
+    <string name="clock_date_right">Праворуч від годинника</string>
+    <string name="clock_date_left">Ліворуч від годинника</string>
+    <string name="clock_date_position">Розташування дати</string>
     <string name="menu_cancel">Скасувати</string>
 
     <string name="face_auto_unlock_title">Автоматичне розблокування обличчям</string>
