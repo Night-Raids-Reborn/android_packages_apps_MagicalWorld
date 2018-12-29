@@ -82,10 +82,12 @@ public class StylePreferences extends SettingsPreferenceFragment {
     private static final int INDEX_NOTIFICATION_DARK = 2;
     private static final int INDEX_NOTIFICATION_BLACK = 3;
     private static final String NOTIFICATION_STYLE = "notification_style";
+    private static final String SWITCH_STYLE = "switch_style";
 
     private Preference mStylePref;
     private Preference mAccentPref;
     private ListPreference mNotificationStyle;
+    private ListPreference mSwitchStyle;
 
     private List<Accent> mAccents;
 
@@ -124,6 +126,14 @@ public class StylePreferences extends SettingsPreferenceFragment {
 
         Preference restart = findPreference("restart_systemui");
         restart.setOnPreferenceClickListener(p -> restartUi());
+
+        mSwitchStyle = (ListPreference) findPreference(SWITCH_STYLE);
+        int switchStyle = Settings.System.getInt(resolver,
+                Settings.System.SWITCH_STYLE, 0);
+        int switchStyleValueIndex = mSwitchStyle.findIndexOfValue(String.valueOf(switchStyle));
+        mSwitchStyle.setValueIndex(switchStyleValueIndex >= 0 ? switchStyleValueIndex : 0);
+        mSwitchStyle.setSummary(mSwitchStyle.getEntry());
+        mSwitchStyle.setOnPreferenceChangeListener(this::onSwitchStyleChange);
     }
 
     private boolean onAccentClick(Preference preference) {
@@ -301,6 +311,29 @@ public class StylePreferences extends SettingsPreferenceFragment {
         int valueIndex = mNotificationStyle.findIndexOfValue(String.valueOf(notificationStyle));
         mNotificationStyle.setValueIndex(valueIndex >= 0 ? valueIndex : 0);
         mNotificationStyle.setSummary(mNotificationStyle.getEntry());
+
+        setupNotificatioStylePref();
+        return true;
+    }
+
+    private boolean onSwitchStyleChange(Preference preference, Object newValue) {
+        Integer value;
+        if (newValue instanceof String) {
+            value = Integer.valueOf((String) newValue);
+        } else if (newValue instanceof Integer) {
+            value = (Integer) newValue;
+        } else {
+            return false;
+        }
+
+        Settings.System.putInt(getContext().getContentResolver(),
+                Settings.System.SWITCH_STYLE, value);
+
+        int switchStyle = Settings.System.getInt(getContext().getContentResolver(),
+                Settings.System.SWITCH_STYLE, 0);
+        int valueIndex = mSwitchStyle.findIndexOfValue(String.valueOf(switchStyle));
+        mSwitchStyle.setValueIndex(valueIndex >= 0 ? valueIndex : 0);
+        mSwitchStyle.setSummary(mSwitchStyle.getEntry());
 
         setupNotificatioStylePref();
         return true;

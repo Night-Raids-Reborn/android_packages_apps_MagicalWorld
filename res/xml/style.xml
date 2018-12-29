@@ -37,6 +37,14 @@
         android:key="style_accent"
         android:title="@string/style_accent_title" />
 
+    <ListPreference
+        android:key="switch_style"
+        android:icon="@drawable/ic_switch_style"
+        android:title="@string/switch_style_title"
+        android:persistent="false"
+        android:entries="@array/switch_style_entries"
+        android:entryValues="@array/switch_style_values" />
+
     <Preference
         android:key="style_automagic"
         android:icon="@drawable/ic_automagic"

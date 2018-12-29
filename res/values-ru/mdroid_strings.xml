@@ -797,4 +797,8 @@
     <string name="hide_lockscreen_alarm_title">Текст будильника</string>
     <string name="hide_lockscreen_alarm_summary">Изменение видимости текста будильника под виджетом часов</string>
 
+    <!-- Switch styles -->
+    <string name="switch_style_title">Стиль переключателей</string>
+    <string name="switch_default">По умолчанию</string>
+
 </resources>
