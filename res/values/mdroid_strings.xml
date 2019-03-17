@@ -708,6 +708,9 @@
     <string name="status_bar_notif_count_title">Show notification count</string>
     <string name="status_bar_notif_count_summary">Display the number of pending notifications</string>
 
+    <string name="hall_sensor_enabled_title">HALL Sensor</string>
+    <string name="hall_sensor_enabled_summary">Enable HALL Sensor</string>
+
 </resources>
 
 

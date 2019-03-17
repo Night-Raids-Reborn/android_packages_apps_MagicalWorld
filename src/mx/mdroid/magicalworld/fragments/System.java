@@ -74,7 +74,17 @@ public class System extends SettingsPreferenceFragment implements
 
         ContentResolver resolver = getActivity().getContentResolver();
 
+        final Resources res = getActivity().getResources();
+
         mFragmentManager = getFragmentManager();
+
+        boolean mHallSensor = res.getBoolean(
+            com.android.internal.R.bool.config_deviceHasHallSensor);
+
+        if (!mHallSensor) {
+            Preference mHallSensorPref = findPreference("mdroid_hall_sensor_enabled");
+            mHallSensorPref.setVisible(false);
+        }
 
         mScreenOffAnimation = (ListPreference) findPreference(SCREEN_OFF_ANIMATION);
         int screenOffStyle = Settings.System.getInt(resolver,

@@ -75,6 +75,12 @@
         android:summary="@string/enable_mtp_dirtyhack_summary"
         android:defaultValue="false" />
 
+    <mx.mdroid.magicalworld.preferences.GlobalSettingSwitchPreference
+        android:key="hall_sensor_enabled"
+        android:title="@string/hall_sensor_enabled_title"
+        android:summary="@string/hall_sensor_enabled_summary"
+        android:defaultValue="false" />
+
     <mx.mdroid.magicalworld.preferences.SystemSettingSwitchPreference
         android:key="sensor_block"
         android:title="@string/sensor_block_title"

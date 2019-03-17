@@ -708,4 +708,7 @@
     <string name="status_bar_notif_count_title">Счетчик уведомлений</string>
     <string name="status_bar_notif_count_summary">Показывать количество новых уведомлений в строке состояния</string>
 
+    <string name="hall_sensor_enabled_title">Датчик Холла</string>
+    <string name="hall_sensor_enabled_summary">Включить датчик Холла</string>
+
 </resources>
