@@ -55,7 +55,7 @@
     <string name="hide_apps_from_recents_summary">Wybierz aplikacje do wykluczenia z panelu ostatnich aplikacji</string>
     <!-- Global Actions -->
     <string name="global_actions_title">Menu zasilania</string>
-    <string name="global_actions_summary">Wybierz, co pokazać po naciśnięciu przycisku zasilania</string>
+    <string name="global_actions_summary">Wybierz, co wyświetlić w menu zasilania po przytrzymaniu przycisku zasilania</string>
     <string name="global_actions_power">Przycisk zasilania</string>
     <string name="global_actions_restart">Uruchom ponownie</string>
     <string name="global_actions_airplane">Tryb samolotowy</string>
@@ -67,23 +67,23 @@
     <string name="global_actions_advanced_reboot_title">Zaawansowany restart</string>
     <string name="global_actions_advanced_reboot_summary">Pokaż opcje restartu do Recovery i Bootloadera</string>
     <!-- tap-to-sleep -->
-    <string name="double_tap_status_bar_sleep_title">Podwójne tapnięcie paska stanu usypia urządzenie</string>
+    <string name="double_tap_status_bar_sleep_title">Usypianie urządzenia tapnięciem w pasek stanu</string>
     <string name="double_tap_status_bar_sleep_summary">Dwukrotnie tapnij na pasku stanu w celu uśpienia urządzenia</string>
-    <string name="double_tap_lock_sleep_title">Podwójne tapnięcie w ekran blokady usypia urządzenie</string>
+    <string name="double_tap_lock_sleep_title">Usypianie urządzenia tapnięciem w ekran blokady</string>
     <string name="double_tap_lock_sleep_summary">Dwukrotnie tapnij na ekranie blokady aby uśpić urządzenie</string>
     <!-- Navbar Animation -->
     <string name="pixel_navbar_anim_title">Animacja paska nawigacji w stylu urządzeń z serii Pixel</string>
-    <string name="pixel_navbar_anim_summary">Umożliwia personalizację animacji przycisku Home w stylu urządzeń z serii Pixel</string>
+    <string name="pixel_navbar_anim_summary">Umożliwia ustawienie animacji przycisku Home w stylu urządzeń z serii Pixel</string>
     <!-- Volume button orientation based on current rotation -->
     <string name="swap_volume_buttons_title">Zamień orientację przycisków głośności</string>
     <string name="swap_volume_buttons_summary">Dostosuj orientację przycisków głośności do aktualnej pozycji telefonu</string>
     <!-- Statusbar Clock options -->
     <string name="status_bar_clock_title">Opcje zegara</string>
-    <string name="status_bar_show_clock_title">Pokaż zegar &amp; datę</string>
-    <string name="clock_title_enable">Wyrównanie</string>
-    <string name="right_clock">Po prawej</string>
-    <string name="center_clock">Na środku</string>
-    <string name="left_clock">Po lewej</string>
+    <string name="status_bar_show_clock_title">Pokaż zegar i datę</string>
+    <string name="clock_title_enable">Wyrównanie zegara</string>
+    <string name="right_clock">Do prawej</string>
+    <string name="center_clock">Do środka</string>
+    <string name="left_clock">Do lewej</string>
     <string name="status_bar_clock_seconds_title">Pokaż sekundy</string>
     <string name="status_bar_clock_seconds_summary">Wyświetlaj sekundy obok zegara na pasku stanu</string>
     <string name="status_bar_am_pm_title">AM/PM</string>
@@ -116,11 +116,11 @@
     <string name="volume_rocker_music_controls_title">Sterowanie odtwarzaniem</string>
     <string name="volume_rocker_music_controls_summary">Gdy ekran jest wyłączony, długie naciśnięcie klawiszy głośności będzie przełączać pomiędzy utworami muzycznymi</string>
     <!-- Torch Power button gestures -->
-    <string name="torch_power_button_gesture_title">Wyłącz latarkę razem z ekranem</string>
-    <string name="torch_power_button_gesture_none">Wyłączone</string>
+    <string name="torch_power_button_gesture_title">Latarka na ekranie blokady</string>
+    <string name="torch_power_button_gesture_none">Wyłączona</string>
     <string name="torch_power_button_gesture_dt">Dwukrotnie naciśnij przycisk zasilania (wolniejsza reakcja po pojedynczym naciśnięciu)</string>
     <string name="torch_power_button_gesture_dt_toast">Gest otwarcia aparatu jest nieaktywny</string>
-    <string name="torch_power_button_gesture_lp">Przytrzymanie przycisku zasilania</string>
+    <string name="torch_power_button_gesture_lp">Długie przytrzymanie przycisku zasilania</string>
     <!-- Volume key cursor control -->
     <string name="volbtn_cursor_control_title">Poruszanie kursorem klawiatury za pomocą klawiszy głośności</string>
     <string name="volbtn_cursor_control_off">Wyłączono</string>
@@ -146,8 +146,8 @@
     <string name="show_battery_percent_title">Pokaż procenty naładowania baterii</string>
     <string name="battery_style_category_title">Ikona baterii</string>
     <string name="battery_percent_none">Nie pokazuj</string>
-    <string name="battery_percent_outside">Pokaż obok ikony</string>
-    <string name="battery_percent_inside">Pokaż wewnątrz ikony</string>
+    <string name="battery_percent_outside">Obok ikony</string>
+    <string name="battery_percent_inside">Wewnątrz ikony</string>
     <!-- Buttons backlight timeout -->
     <string name="backlight_timeout_title">Czas podświetlenia przycisków</string>
     <string name="backlight_timeout_on">Zawsze włączone</string>
@@ -178,28 +178,28 @@
     <string name="force_ambient_for_media_on">Normalny</string>
     <string name="force_ambient_for_media_on_forced_clean">Minimalny</string>
     <!-- Style -->
-    <string name="style_title">Styl</string>
+    <string name="style_title">Motyw urządzenia</string>
     <string name="style_summary">Dostosuj wygląd urządzenia</string>
-    <string name="style_global_title">Styl</string>
+    <string name="style_global_title">Motyw urządzenia</string>
     <string name="style_global_entry_automatic">Automatyczny (na podstawie tapety)</string>
     <string name="style_global_entry_light">Jasny</string>
     <string name="style_global_entry_dark">Ciemny</string>
     <string name="style_global_entry_black">Czarny</string>
     <string name="style_global_entry_time">Automatyczny (dzień/noc)</string>
-    <string name="style_accent_title">Kolor akcentów</string>
+    <string name="style_accent_title">Akcent motywu urządzenia</string>
     <string name="style_accent_configuration_not_supported">Obecny akcent kolorystyczny jest niekompatybilny z wybranym stylem. Aby kontynuować, musisz wybrać inny akcent. Czy chcesz kontynuować?</string>
     <string name="style_accent_configuration_positive">Kontynuuj</string>
     <string name="style_automagic_title">Dostosuj automatycznie</string>
-    <string name="style_automagic_description">Zastosuj styl zgodny z tapetą</string>
-    <string name="style_automagic_dialog_content">Sugerowany styl: <b>%1$s</b> z <b>%2$s</b> akcentem.\nChcesz go zastosować?</string>
+    <string name="style_automagic_description">Zastosuj motyw zgodny z ustawioną tapetą</string>
+    <string name="style_automagic_dialog_content">Sugerowany motyw urządzenia: <b>%1$s</b> z <b>%2$s</b>m akcentem.\nChcesz go zastosować?</string>
     <string name="style_automagic_dialog_positive">Zastosuj</string>
     <string name="style_accent_default_name">Domyślny</string>
     <string name="style_restart_title">Zresetuj interfejs użytkownika</string>
-    <string name="style_restart_summary">Zresetuj interfejs użytkownika, jeśli wybrany styl powoduje problemy</string>
+    <string name="style_restart_summary">Zresetuj interfejs użytkownika, jeśli wybrany motyw urządzenia powoduje problemy</string>
     <string name="theme_applied_toast">Zastosowano motyw.</string>
     <string name="applying_theme_toast">Stosowanie motywu, proszę czekać...</string>
     <!-- Notification styles -->
-    <string name="notification_style_title">Kolor powiadomień</string>
+    <string name="notification_style_title">Styl powiadomień</string>
     <string name="notification_auto">Automatycznie (w oparciu o motyw)</string>
     <string name="notification_light">Jasny</string>
     <string name="notification_dark">Ciemny</string>
@@ -210,8 +210,8 @@
     <string name="qs_rows_landscape_title">Ilość rzędów w poziomie</string>
     <string name="qs_columns_portrait_title">Ilość kolumn w pionie</string>
     <string name="qs_columns_landscape_title">Ilość kolumn w poziomie</string>
-    <string name="qs_tile_title_visibility_title">Kafelki szybkich ustawień</string>
-    <string name="qs_tile_title_visibility_summary">Pokaż nazwy kafelków szybkich ustawień</string>
+    <string name="qs_tile_title_visibility_title">Nazwy szybkich ustawień</string>
+    <string name="qs_tile_title_visibility_summary">Pokaż nazwy pod kafelkami szybkich ustawień</string>
     <string name="sysui_qqs_count_title">Małe kafelki</string>
     <!-- Memory bar -->
     <string name="recents_show_membar_title">Pasek zużycia pamięci</string>
@@ -236,7 +236,7 @@
     <string name="dialog_delete_message">Usunąć wybrany element?</string>
     <!-- Statusbar ticker -->
     <string name="ticker_screen_title">Pasek powiadomień</string>
-    <string name="ticker_mode_title">Treść powiadomień na pasku stanu</string>
+    <string name="ticker_mode_title">Wyświtlaj powiadomiania na pasku stanu</string>
     <string name="ticker_disabled">Wyłączone</string>
     <string name="ticker_enabled">Tylko powiadomienia</string>
     <string name="ticker_media_enabled">Powiadomienia oraz zmiana muzyki</string>
@@ -256,8 +256,8 @@
     <string name="qs_panel_alpha_title">Przezroczystość panelu szybkich ustawień</string>
     <string name="fprint_category">Ustawienia czytnika linii papilarnych</string>
     <!-- Fingerprint authentication vibration -->
-    <string name="fprint_sucess_vib_title">Wibracja podczas uwierzytelniania odcisku palca</string>
-    <string name="fprint_sucess_vib_summary">Wibracja po udanym uwierzytelnianiu odcisku palca</string>
+    <string name="fprint_sucess_vib_title">Wibracja podczas uwierzytelniania odciskiem palca</string>
+    <string name="fprint_sucess_vib_summary">Urządzenie zawibruje jeśli uwierzytelnienie odciskiem palca powiedzie się</string>
     <!-- Fingerprint unlock keystore -->
     <string name="fp_unlock_keystore_title">Odblokowywanie urządzenia odciskiem palca</string>
     <string name="fp_unlock_keystore_summary">Odblokuj urządzenie za pomocą odcisku palca po ponownym uruchomieniu, bez podawania kodu PIN/hasła/wzoru\nUwaga: na własne ryzyko!</string>
@@ -274,7 +274,7 @@
     <!-- Navbar tuner -->
     <string name="navbar_tuner_title">Przyciski paska nawigacji</string>
     <!-- Navigation bar arrow keys -->
-    <string name="show_navbar_arrow_keys_title">Pokaż klawisze strzałek podczas pisania</string>
+    <string name="show_navbar_arrow_keys_title">Klawisze strzałek podczas pisania</string>
     <string name="show_navbar_arrow_keys_summary">Wyświetlaj przyciski do poruszania kursorem podczas wprowadzania tekstu.</string>
     <string name="volume_and_power_buttons_category">Przyciski głośności i zasilania</string>
     <!-- Volume rocker wake -->
@@ -344,8 +344,8 @@
     <string name="sensor_block_title">Blokada czujników dla aplikacji</string>
     <string name="sensor_block_summary">Blokuj dostęp do niektórych czujników dla części aplikacji, aby oszczędzać baterię.</string>
     <!-- Data Disabled Icon -->
-    <string name="data_disabled_icon_title">Pokaż ikonę wyłączonych danych mobilnych</string>
-    <string name="data_disabled_icon_summary">Wyświetl znak X obok paska sygnału, gdy dane mobilne są wyłączone</string>
+    <string name="data_disabled_icon_title">Ikona wyłączonych danych mobilnych</string>
+    <string name="data_disabled_icon_summary">Wyświetl znak X nad paskiem sygnału, gdy dane mobilne są wyłączone</string>
     <!-- CarbonGestures -->
     <string name="carbon_gesture_preference_title">Gesty</string>
     <string name="carbon_gestures_summary">Skonfiguruj gesty urządzenia</string>
@@ -462,7 +462,7 @@
     <string name="notification_light_settings">Kolory powiadomień</string>
     <string name="battery_light_settings">Kolory baterii</string>
     <!-- Blink flashlight for incoming calls -->
-    <string name="flashlight_on_call_title">Migaj latarką podczas połączenia</string>
+    <string name="flashlight_on_call_title">Migaj latarką podczas połączenia przychodzącego</string>
     <string name="flashlight_on_call_disabled">Wyłączone</string>
     <string name="flashlight_on_call_not_dnd">Migaj latarką tylko w trybie dzwonka</string>
     <string name="flashlight_on_call_dnd">Migaj latarką tylko w trybie \"nie przeszkadzać\"</string>
@@ -490,7 +490,7 @@
     <string name="log_it_alert_title">Co to jest?</string>
     <string name="log_it_alert_faq">Może jesteś tutaj i zastanawiasz się: \"Co to jest, do diabła, i co mam wysłać?\". \nOto kilka informacji na temat rzeczy, które możesz wysłać:\n\nLogcat: Jest to sposób, w jaki Android wyprowadza wszystkie zdarzenia systemowe, jak błędy, awarie, a nawet informacje o uruchomionym procesie. Idealny na awarie i błędy systemowe.\n\nDmesg: Wydaje niektóre z komunikatów jądra, ale filtruje rzeczy, których użytkownicy mogą nie ogarniać&#8230; jeśli ich to obchodzi \n\nTo jest to samo co Dmesg, ale bez filtrów, dając więcej informacji o wszystkich zdarzeniach jądra. Idealny do losowego restartu.</string>
     <!-- Small quick settings scroller -->
-    <string name="qqs_scroll_title">Przewiń kafelki szybkich ustawień</string>
+    <string name="qqs_scroll_title">Przewijanie szybkich ustawień</string>
     <string name="qqs_scroll_summary">Pozwól przewijać małe kafelki szybkich ustawień</string>
     <!-- Status bar - Battery saver color -->
     <string name="status_bar_battery_saver_color_title">Kolor paska stanu w trybie oszczędzania baterii</string>
@@ -499,8 +499,8 @@
     <string name="lockscreen_enable_power_menu_title">Menu zasilania</string>
     <string name="lockscreen_enable_power_menu_summary">Zezwalaj na dostęp do menu zasilania na zabezpieczonym ekranie blokady</string>
     <!-- Volume Steps -->
-    <string name="volume_steps_title">Poziomy głośności</string>
-    <string name="volume_steps_summary">Skonfiguruj dostępne poziomy dla różnych głośności dźwięku</string>
+    <string name="volume_steps_title">Poziomy głośności urządzenia</string>
+    <string name="volume_steps_summary">Dostosuj dostępne poziomy dla różnych głośności dźwięku</string>
     <string name="volume_steps_30">30 poziomów</string>
     <string name="volume_steps_15">15 poziomów</string>
     <string name="volume_steps_7">7 poziomów</string>
@@ -528,7 +528,7 @@
     <string name="force_expanded_settings_summary">Rozwiń domyślnie wszystkie pozycje menu w ustawieniach</string>
     <!-- QuickSettings haptic feedback -->
     <string name="quick_settings_vibrate_title">Wibracja przy dotknięciu</string>
-    <string name="quick_settings_vibrate_summary">Wibruj podczas dotykania przełączników</string>
+    <string name="quick_settings_vibrate_summary">Wibruj podczas dotykania kafelków szybkich ustawień</string>
     <!-- Option to enable/disable scrolling cache -->
     <string name="pref_scrollingcache_title">Pamięć podręczna przewijania</string>
     <string name="pref_scrollingcache_summary">Pamięć podręczna przewijania może poprawić wydajność przewijania kosztem pamięci</string>
@@ -571,9 +571,46 @@
     <string name="reboot_now">Zrestartuj teraz</string>
     <string name="reboot_later">Zrestartuj później</string>
     <!-- QS Tile Theme/Tinting -->
-    <string name="qs_tile_theme_title">Akcent kafelków szybkich ustawień</string>
+    <string name="qs_tile_theme_title">Akcent szybkich ustawień</string>
     <string name="qs_tile_theme_summary">Umożliwi to zastosowanie akcentu urządzenia w kafelkach szybkich ustawień</string>
     <string name="enable_home_key_when_ringing_title">Włącz klawisz Home podczas dzwonienia</string>
     <string name="enable_home_key_when_ringing_summary">Zezwól na użycie klawisza Home, podczas połączenia przychodzącego</string>
-     
+     <!-- XOSP Blur personalizations -->
+    <string name="settings_blur_cat">Dostosowywanie rozmyć</string>
+    <string name="settings_blur_sum">Ustawienia rozmycia dla UI systemu</string>
+    <string name="blurred_status_bar_expanded_enabled_pref">Rozmyj tło paska stanu</string>
+    <string name="blurred_status_bar_expanded_enabled_pref_summary">Rozmyj tło rozwiniętego panelu powiadomień</string>
+    <string name="translucent_notifications_pref">Przeźroczyste powiadomienia</string>
+    <string name="translucent_notifications_pref_summary">Ustaw przeźroczyste tło powiadomień</string>
+    <string name="translucent_quick_settings_pref">Przeźroczysty rozwinięty pasek stanu</string>
+    <string name="translucent_quick_settings_pref_summary">Spraw, by tło panelu szybkich ustawień stało się przeźroczyste</string>
+    <string name="transluency_level_universal">Stopień przeźroczystości</string>
+    <string name="blurred_recent_app_enabled_pref">Rozmyte tło panelu ostatnich aplikacji</string>
+    <string name="blurred_recent_app_enabled_pref_summary">Spraw, by tło panelu ostatnich aplikacji stało się przeźroczyste</string>
+    <string name="blur_light_color">Filtr obrazu o barwach jasnych</string>
+    <string name="blur_dark_color">blur_dark_color</string>
+    <string name="blur_mixed_color">Filtr obrazu o barwach mieszanych</string>
+    <string name="blur_notice">O funkcji rozmyć</string>
+    <string name="blur_notice_summary">Na ekranie blokady wszystkie rozmycia są wyłączone! Dostępne są tylko przezroczyste powiadomienia!</string>
+    <string name="blur_colors_notice">Co robią te kolory?</string>
+    <string name="blur_colors_notice_summary">Te kolory służą do barwienia rozmytych teł. Zamiast normalnych szarości, można teraz wybrać dowolny kolor.\nSą dostępne trzy filtry kolorów: jeden dla jasnego tła, inny dla ciemnego i ostatni dla tła mieszanego.\nZatem jak działają te kolory?\nJest to proste, tak jak mówią tytuły, filtr jasnego jest używany do jasnego tła, filtr ciemnego dla ciemnego, a filtr mieszany dla tła nie za ciemnego, ale też nie za bardzo jasnego.\nTe kolory są używane dla rozmycia tła w pasku stanu oraz panelu ostatnich aplikacji </string>
+    <string name="blur_expstatus_cat">Rozszerzony pasek stanu </string>
+    <string name="blur_notifications_cat">Powiadomienia</string>
+    <string name="blur_qs_cat">Szybkie ustawienia</string>
+    <string name="blur_recents_cat">Panel ostatnich aplikacji</string>
+    <string name="blur_colors_cat">Filtry rozmycia koloru</string>
+    <string name="blur_notices_cat">Uwagi</string>
+    <string name="blurred_scale">Stopień rozmycia</string>
+    <string name="blurred_scale_summary">Jakość rozmytego obrazu</string>
+    <string name="blurred_radius">Promień rozmycia</string>
+    <string name="blurred_radius_summary">Ilość rozmycia</string>
+    <string name="blur_cat_notice">Uwaga</string>
+    <string name="blur_cat_notice_summary">Wszystkie rozmycia są wyłączone na ekranie blokady! Dostępne są tylko przezroczyste powiadomienia!</string>
+    <string name="reset_message">Czy zresetować wszystkie ustawenia do wartości domyślnych?</string>
+    <!-- Notification count -->
+    <string name="status_bar_notif_count_title">Pokaż liczbę powiadomień</string>
+    <string name="status_bar_notif_count_summary">Wyświetla licznik oczekujących powiadomień</string>
+    <string name="hall_sensor_enabled_title">Czujnik Halla</string>
+    <string name="hall_sensor_enabled_summary">Włącz czujnik Halla, dla etuii z klapką zakrywającą ekran</string>
+
 </resources>
