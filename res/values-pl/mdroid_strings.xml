@@ -32,9 +32,9 @@
     <string name="cancel">Anuluj</string>
     <string name="save">Zapisz</string>
     <!-- Recents panel settings -->
-    <string name="show_clear_all_recents_button_title">Przycisk \"Wyczyść wszystko\"</string>
-    <string name="show_clear_all_recents_button_summary">Pokaż przycisk \"Wyczyść wszystko\"</string>
-    <string name="recents_clear_all_location_title">Pozycja przycisku \"Wyczyść wszystko\"</string>
+    <string name="show_clear_all_recents_button_title">Przycisk \"wyczyść wszystko\"</string>
+    <string name="show_clear_all_recents_button_summary">Pokaż przycisk \"wyczyść wszystko\" w panelu ostatnich aplikacji</string>
+    <string name="recents_clear_all_location_title">Pozycja przycisku \"wyczyść wszystko\"</string>
     <string name="recents_clear_all_location_top_right">Prawy górny róg</string>
     <string name="recents_clear_all_location_top_left">Lewy górny róg</string>
     <string name="recents_clear_all_location_top_center">U góry po środku</string>
@@ -84,7 +84,7 @@
     <string name="right_clock">Do prawej</string>
     <string name="center_clock">Do środka</string>
     <string name="left_clock">Do lewej</string>
-    <string name="status_bar_clock_seconds_title">Pokaż sekundy</string>
+    <string name="status_bar_clock_seconds_title">Sekundy zegara</string>
     <string name="status_bar_clock_seconds_summary">Wyświetlaj sekundy obok zegara na pasku stanu</string>
     <string name="status_bar_am_pm_title">AM/PM</string>
     <string name="status_bar_am_pm_info">Format 24 godzinny</string>
@@ -118,7 +118,7 @@
     <!-- Torch Power button gestures -->
     <string name="torch_power_button_gesture_title">Latarka na ekranie blokady</string>
     <string name="torch_power_button_gesture_none">Wyłączona</string>
-    <string name="torch_power_button_gesture_dt">Dwukrotnie naciśnij przycisk zasilania (wolniejsza reakcja po pojedynczym naciśnięciu)</string>
+    <string name="torch_power_button_gesture_dt">Dwukrotne naciśnięcie przycisk zasilania</string>
     <string name="torch_power_button_gesture_dt_toast">Gest otwarcia aparatu jest nieaktywny</string>
     <string name="torch_power_button_gesture_lp">Długie przytrzymanie przycisku zasilania</string>
     <!-- Volume key cursor control -->
@@ -142,8 +142,8 @@
     <string name="battery_style_big_dotted_circle">Duży przerywany okrąg</string>
     <string name="battery_style_square">Kwadrat</string>
     <string name="battery_style_text">Tekst</string>
-    <string name="battery_style_hidden">Ukryty</string>
-    <string name="show_battery_percent_title">Pokaż procenty naładowania baterii</string>
+    <string name="battery_style_hidden">Brak ikony</string>
+    <string name="show_battery_percent_title">Pokaż procentowy stan naładowania baterii</string>
     <string name="battery_style_category_title">Ikona baterii</string>
     <string name="battery_percent_none">Nie pokazuj</string>
     <string name="battery_percent_outside">Obok ikony</string>
@@ -189,12 +189,12 @@
     <string name="style_accent_title">Akcent motywu urządzenia</string>
     <string name="style_accent_configuration_not_supported">Obecny akcent kolorystyczny jest niekompatybilny z wybranym stylem. Aby kontynuować, musisz wybrać inny akcent. Czy chcesz kontynuować?</string>
     <string name="style_accent_configuration_positive">Kontynuuj</string>
-    <string name="style_automagic_title">Dostosuj automatycznie</string>
-    <string name="style_automagic_description">Zastosuj motyw zgodny z ustawioną tapetą</string>
-    <string name="style_automagic_dialog_content">Sugerowany motyw urządzenia: <b>%1$s</b> z <b>%2$s</b>m akcentem.\nChcesz go zastosować?</string>
+    <string name="style_automagic_title">Magiczne dostosowanie</string>
+    <string name="style_automagic_description">Wykorzystuje pokłady magii zgromadzonej w urządzeniu i dostosowuje motyw do aktualnie posiadanej tapety</string>
+    <string name="style_automagic_dialog_content">Sugerowany motyw urządzenia: <b>%1$s</b> z akcentem <b>%2$s</b>.\nChcesz go zastosować?</string>
     <string name="style_automagic_dialog_positive">Zastosuj</string>
     <string name="style_accent_default_name">Domyślny</string>
-    <string name="style_restart_title">Zresetuj interfejs użytkownika</string>
+    <string name="style_restart_title">Reset interfejsu</string>
     <string name="style_restart_summary">Zresetuj interfejs użytkownika, jeśli wybrany motyw urządzenia powoduje problemy</string>
     <string name="theme_applied_toast">Zastosowano motyw.</string>
     <string name="applying_theme_toast">Stosowanie motywu, proszę czekać...</string>
@@ -210,9 +210,9 @@
     <string name="qs_rows_landscape_title">Ilość rzędów w poziomie</string>
     <string name="qs_columns_portrait_title">Ilość kolumn w pionie</string>
     <string name="qs_columns_landscape_title">Ilość kolumn w poziomie</string>
-    <string name="qs_tile_title_visibility_title">Nazwy szybkich ustawień</string>
-    <string name="qs_tile_title_visibility_summary">Pokaż nazwy pod kafelkami szybkich ustawień</string>
-    <string name="sysui_qqs_count_title">Małe kafelki</string>
+    <string name="qs_tile_title_visibility_title">Podpisy szybkich ustawień</string>
+    <string name="qs_tile_title_visibility_summary">Pokaż nazwy pod przełącznikami szybkich ustawień</string>
+    <string name="sysui_qqs_count_title">Ilość przełączników szybkich ustawień</string>
     <!-- Memory bar -->
     <string name="recents_show_membar_title">Pasek zużycia pamięci</string>
     <string name="recents_show_membar_summary">Pokaż pasek zużycia pamięci RAM w panelu ostatnich aplikacji</string>
@@ -262,13 +262,13 @@
     <string name="fp_unlock_keystore_title">Odblokowywanie urządzenia odciskiem palca</string>
     <string name="fp_unlock_keystore_summary">Odblokuj urządzenie za pomocą odcisku palca po ponownym uruchomieniu, bez podawania kodu PIN/hasła/wzoru\nUwaga: na własne ryzyko!</string>
     <!-- Quick pull down-->
-    <string name="quick_pulldown_title">Szybkie rozwijanie</string>
+    <string name="quick_pulldown_title">Szybkie rozwijanie szybkich ustawień</string>
     <string name="quick_pulldown_summary">%1$s krawędź paska stanu rozwija szybkie ustawienia</string>
     <string name="quick_pulldown_summary_always">Zawsze pokazuj rozwinięte szybkie ustawienia na pasku stanu</string>
-    <string name="quick_pulldown_off">Wyłączony</string>
+    <string name="quick_pulldown_off">Wyłączone</string>
     <string name="quick_pulldown_left">Lewa krawędź</string>
     <string name="quick_pulldown_right">Prawa krawędź</string>
-    <string name="quick_pulldown_always">Zawsze</string>
+    <string name="quick_pulldown_always">Zawsze rozwijaj</string>
     <!-- Navigation bar -->
     <string name="navigation_bar_category">Pasek nawigacji</string>
     <!-- Navbar tuner -->
@@ -318,7 +318,7 @@
     <string name="media_art_title">Okładka albumu</string>
     <string name="media_art_summary">Włącz okładkę albumu odtwarzanego dźwięku na ekranie blokady</string>
     <!-- Lockscreen weather -->
-    <string name="lock_screen_weather_settings_title">Pogoda</string>
+    <string name="lock_screen_weather_settings_title">Pogoda na ekranie blokady</string>
     <string name="weather_show_weather_title">Pokaż pogodę</string>
     <string name="weather_show_weather_summary">Włącz aby wyświetlać informacje o pogodzie</string>
     <string name="weather_show_location_title">Wyświetl lokalizację</string>
@@ -491,7 +491,7 @@
     <string name="log_it_alert_faq">Może jesteś tutaj i zastanawiasz się: \"Co to jest, do diabła, i co mam wysłać?\". \nOto kilka informacji na temat rzeczy, które możesz wysłać:\n\nLogcat: Jest to sposób, w jaki Android wyprowadza wszystkie zdarzenia systemowe, jak błędy, awarie, a nawet informacje o uruchomionym procesie. Idealny na awarie i błędy systemowe.\n\nDmesg: Wydaje niektóre z komunikatów jądra, ale filtruje rzeczy, których użytkownicy mogą nie ogarniać&#8230; jeśli ich to obchodzi \n\nTo jest to samo co Dmesg, ale bez filtrów, dając więcej informacji o wszystkich zdarzeniach jądra. Idealny do losowego restartu.</string>
     <!-- Small quick settings scroller -->
     <string name="qqs_scroll_title">Przewijanie szybkich ustawień</string>
-    <string name="qqs_scroll_summary">Pozwól przewijać małe kafelki szybkich ustawień</string>
+    <string name="qqs_scroll_summary">Pozwól przewijać zwinięte przełączniki szybkich ustawień</string>
     <!-- Status bar - Battery saver color -->
     <string name="status_bar_battery_saver_color_title">Kolor paska stanu w trybie oszczędzania baterii</string>
     <string name="status_bar_battery_saver_color_summary">Uwaga: kolor zostanie zastosowany przy następnym włączeniu trybu oszczędzania baterii!</string>
@@ -514,21 +514,21 @@
     <string name="bluetooth_sco_volume_option_title">Poziomy głośności: Połączenie Bluetooth</string>
     <string name="volume_steps_reset">Przywróć domyślnie</string>
     <!-- 4G icon -->
-    <string name="show_fourg_icon_title">Ikona 4G</string>
-    <string name="show_fourg_icon_summary">Wyświetl ikonę 4G zamiast ikony LTE</string>
+    <string name="show_fourg_icon_title">Ikona transmisji danych komórkowych</string>
+    <string name="show_fourg_icon_summary">Wyświetla ikonę "4G" zamiast ikony "LTE" podczas używania szybkiego internetu komórkowego</string>
     <!-- Smart pulldown-->
-    <string name="smart_pulldown_title">Inteligentne rozwijanie</string>
+    <string name="smart_pulldown_title">Inteligentne rozwijanie szybkich ustawień</string>
     <string name="smart_pulldown_summary">Otwórz szybkie ustawienia, gdy pojawi się %1$s powiadomień</string>
     <string name="smart_pulldown_none_summary">Otwórz szybkie ustawienia, gdy nie ma aktywnych powiadomień</string>
     <string name="smart_pulldown_off">Wyłączone</string>
-    <string name="smart_pulldown_none">brak powiadomień</string>
-    <string name="smart_pulldown_dismissable">brak usuwalnych</string>
-    <string name="smart_pulldown_ongoing">brak trwałych</string>
+    <string name="smart_pulldown_none">Brak powiadomień</string>
+    <string name="smart_pulldown_dismissable">Brak usuwalnych powiadomień</string>
+    <string name="smart_pulldown_ongoing">Brak trwałych powiadomień</string>
     <string name="force_expanded_settings_title">Rozwiń ustawienia</string>
     <string name="force_expanded_settings_summary">Rozwiń domyślnie wszystkie pozycje menu w ustawieniach</string>
     <!-- QuickSettings haptic feedback -->
     <string name="quick_settings_vibrate_title">Wibracja przy dotknięciu</string>
-    <string name="quick_settings_vibrate_summary">Wibruj podczas dotykania kafelków szybkich ustawień</string>
+    <string name="quick_settings_vibrate_summary">Urządzenie zawibruje podczas dotykania przęłączników szybkich ustawień</string>
     <!-- Option to enable/disable scrolling cache -->
     <string name="pref_scrollingcache_title">Pamięć podręczna przewijania</string>
     <string name="pref_scrollingcache_summary">Pamięć podręczna przewijania może poprawić wydajność przewijania kosztem pamięci</string>
@@ -571,8 +571,8 @@
     <string name="reboot_now">Zrestartuj teraz</string>
     <string name="reboot_later">Zrestartuj później</string>
     <!-- QS Tile Theme/Tinting -->
-    <string name="qs_tile_theme_title">Akcent szybkich ustawień</string>
-    <string name="qs_tile_theme_summary">Umożliwi to zastosowanie akcentu urządzenia w kafelkach szybkich ustawień</string>
+    <string name="qs_tile_theme_title">Kolor przełączników szybkich ustawień</string>
+    <string name="qs_tile_theme_summary">Umożliwi to pokolorowanie przełączników szybkich ustawień akcentem wybranym w ustawieniach motywu urządzenia</string>
     <string name="enable_home_key_when_ringing_title">Włącz klawisz Home podczas dzwonienia</string>
     <string name="enable_home_key_when_ringing_summary">Zezwól na użycie klawisza Home, podczas połączenia przychodzącego</string>
      <!-- XOSP Blur personalizations -->
