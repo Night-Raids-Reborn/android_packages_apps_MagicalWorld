@@ -82,7 +82,7 @@ public class System extends SettingsPreferenceFragment implements
             com.android.internal.R.bool.config_deviceHasHallSensor);
 
         if (!mHallSensor) {
-            Preference mHallSensorPref = findPreference("mdroid_hall_sensor_enabled");
+            Preference mHallSensorPref = findPreference("hall_sensor_enabled");
             mHallSensorPref.setVisible(false);
         }
 
