@@ -60,6 +60,12 @@
             defaultColor="#00ffffff"
             alphaSlider="true" />
 
+    	<mx.mdroid.magicalworld.preferences.SystemSettingSwitchPreference
+            android:key="slim_recents_mem_display"
+            android:title="@string/recents_show_membar_title"
+            android:summary="@string/recents_show_membar_summary"
+            android:defaultValue="false" />
+
         <mx.mdroid.magicalworld.preferences.SystemSettingSwitchPreference
             android:key="slim_recents_corner_radius"
             android:title="@string/slim_recents_corner_radius_title"
