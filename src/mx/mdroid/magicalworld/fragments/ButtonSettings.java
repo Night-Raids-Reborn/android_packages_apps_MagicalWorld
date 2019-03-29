@@ -29,6 +29,7 @@ import android.support.v7.preference.PreferenceScreen;
 import android.support.v7.preference.ListPreference;
 import android.support.v14.preference.SwitchPreference;
 import android.provider.Settings;
+import android.view.ViewConfiguration;
 import android.widget.Toast;
 
 import mx.mdroid.magicalworld.preferences.CustomSeekBarPreference;
@@ -45,6 +46,7 @@ public class ButtonSettings extends ActionFragment implements
         Preference.OnPreferenceChangeListener {
     private static final String TAG = "Buttons";
     private static final String TORCH_POWER_BUTTON_GESTURE = "torch_power_button_gesture";
+    private static final String LONG_PRESS_POWER_TORCH_DELAY = "long_press_power_torch_delay";
 
     private static final String HWKEY_DISABLE = "hardware_keys_disable";
     private static final String KEY_VOLUME_KEY_CURSOR_CONTROL = "volume_key_cursor_control";
@@ -82,6 +84,7 @@ public class ButtonSettings extends ActionFragment implements
     private SwitchPreference mHomeAnswerCall;
 
     private ListPreference mTorchPowerButton;
+    private ListPreference mTorchPowerButtonLongPressDelay;
     private ListPreference mVolumeKeyCursorControl;
 
     private ContentResolver resolver;
@@ -118,6 +121,18 @@ public class ButtonSettings extends ActionFragment implements
             mTorchPowerButton.setValue(Integer.toString(mTorchPowerButtonValue));
             mTorchPowerButton.setSummary(mTorchPowerButton.getEntry());
             mTorchPowerButton.setOnPreferenceChangeListener(this);
+
+            mTorchPowerButtonLongPressDelay = (ListPreference) findPreference(LONG_PRESS_POWER_TORCH_DELAY);
+            long mTorchPowerButtonLongPressDelayValue = Settings.System.getLong(resolver,
+                    Settings.System.LONG_PRESS_POWER_TORCH_DELAY, ViewConfiguration.get(getContext()).getDeviceGlobalActionKeyTimeout());
+            mTorchPowerButtonLongPressDelay.setValue(Long.toString(mTorchPowerButtonLongPressDelayValue));
+            mTorchPowerButtonLongPressDelay.setSummary(mTorchPowerButtonLongPressDelay.getEntry());
+            mTorchPowerButtonLongPressDelay.setOnPreferenceChangeListener(this);
+            if (mTorchPowerButtonValue == 2) {
+                mTorchPowerButtonLongPressDelay.setEnabled(true);
+            } else {
+                mTorchPowerButtonLongPressDelay.setEnabled(false);
+            }
         }
 
         final PreferenceCategory hwkeyCat = (PreferenceCategory) prefSet.findPreference(CATEGORY_HWKEY);
@@ -341,6 +356,19 @@ public class ButtonSettings extends ActionFragment implements
                     (R.string.torch_power_button_gesture_dt_toast),
                     Toast.LENGTH_SHORT).show();
             }
+            if (mTorchPowerButtonValue == 2) {
+                mTorchPowerButtonLongPressDelay.setEnabled(true);
+            } else {
+                mTorchPowerButtonLongPressDelay.setEnabled(false);
+            }
+            return true;
+        } else if (preference == mTorchPowerButtonLongPressDelay) {
+            long mTorchPowerButtonLongPressDelayValue = Long.parseLong((String) objValue);
+            int index = mTorchPowerButtonLongPressDelay.findIndexOfValue((String) objValue);
+            mTorchPowerButtonLongPressDelay.setSummary(
+                    mTorchPowerButtonLongPressDelay.getEntries()[index]);
+            Settings.System.putLong(resolver, Settings.System.LONG_PRESS_POWER_TORCH_DELAY,
+                    mTorchPowerButtonLongPressDelayValue);
             return true;
         } else if (preference == mHwKeyDisable) {
             boolean value = (Boolean) objValue;

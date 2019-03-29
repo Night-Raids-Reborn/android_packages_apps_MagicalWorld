@@ -743,4 +743,15 @@
 
     <string name="aosp_recents_title">AOSP recents</string>
 
+    <string name="long_press_power_torch_delay_title">Longpress delay to toggle torch</string>
+    <string name="long_press_power_torch_delay_100">100 ms</string>
+    <string name="long_press_power_torch_delay_150">150 ms</string>
+    <string name="long_press_power_torch_delay_200">200 ms</string>
+    <string name="long_press_power_torch_delay_250">250 ms</string>
+    <string name="long_press_power_torch_delay_300">300 ms</string>
+    <string name="long_press_power_torch_delay_350">350 ms</string>
+    <string name="long_press_power_torch_delay_400">400 ms</string>
+    <string name="long_press_power_torch_delay_450">450 ms</string>
+    <string name="long_press_power_torch_delay_500">500 ms</string>
+
 </resources>

@@ -574,4 +574,28 @@
         <!-- <item>2</item>-->
     </string-array>
 
+    <string-array name="long_press_power_torch_delay_entries">
+        <item>@string/long_press_power_torch_delay_100</item>
+        <item>@string/long_press_power_torch_delay_150</item>
+        <item>@string/long_press_power_torch_delay_200</item>
+        <item>@string/long_press_power_torch_delay_250</item>
+        <item>@string/long_press_power_torch_delay_300</item>
+        <item>@string/long_press_power_torch_delay_350</item>
+        <item>@string/long_press_power_torch_delay_400</item>
+        <item>@string/long_press_power_torch_delay_450</item>
+        <item>@string/long_press_power_torch_delay_500</item>
+    </string-array>
+
+    <string-array name="long_press_power_torch_delay_values" translatable="false">
+        <item>100</item>
+        <item>150</item>
+        <item>200</item>
+        <item>250</item>
+        <item>300</item>
+        <item>350</item>
+        <item>400</item>
+        <item>450</item>
+        <item>500</item>
+    </string-array>
+
 </resources>

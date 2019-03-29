@@ -97,6 +97,12 @@
             android:entries="@array/torch_power_button_gesture_entries"
             android:entryValues="@array/torch_power_button_gesture_values" />
 
+        <ListPreference
+            android:key="long_press_power_torch_delay"
+            android:title="@string/long_press_power_torch_delay_title"
+            android:entries="@array/long_press_power_torch_delay_entries"
+            android:entryValues="@array/long_press_power_torch_delay_values" />
+
     </PreferenceCategory>
 
     <PreferenceCategory
