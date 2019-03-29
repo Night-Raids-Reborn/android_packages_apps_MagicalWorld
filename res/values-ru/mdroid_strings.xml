@@ -754,4 +754,6 @@
     <string name="long_press_power_torch_delay_450">450 мс</string>
     <string name="long_press_power_torch_delay_500">500 мс</string>
 
+    <string name="torch_power_button_gesture_haptic_feedback_enable_title">Вибрировать при включении фонарика</string>
+
 </resources>

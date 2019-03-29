@@ -754,4 +754,6 @@
     <string name="long_press_power_torch_delay_450">450 ms</string>
     <string name="long_press_power_torch_delay_500">500 ms</string>
 
+    <string name="torch_power_button_gesture_haptic_feedback_enable_title">Vibrate when toggling torch</string>
+
 </resources>

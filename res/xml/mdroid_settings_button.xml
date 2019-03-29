@@ -103,6 +103,11 @@
             android:entries="@array/long_press_power_torch_delay_entries"
             android:entryValues="@array/long_press_power_torch_delay_values" />
 
+        <mx.mdroid.magicalworld.preferences.SystemSettingSwitchPreference
+            android:key="torch_power_button_gesture_haptic_feedback_enable"
+            android:title="@string/torch_power_button_gesture_haptic_feedback_enable_title"
+            android:defaultValue="true" />
+
     </PreferenceCategory>
 
     <PreferenceCategory
