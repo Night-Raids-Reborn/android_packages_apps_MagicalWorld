@@ -104,6 +104,9 @@
     <string name="clock_date_style_lowercase">Małe litery</string>
     <string name="clock_date_style_uppercase">Duże litery</string>
     <string name="clock_date_format_custom">Niestandardowy format Java</string>
+    <string name="clock_date_right">Z lewej strony</string>
+    <string name="clock_date_left">Z prawej strony </string>
+    <string name="clock_date_position">Pozycja wyświetlania daty</string>
     <string name="menu_cancel">Anuluj</string>
     <string name="face_auto_unlock_title">Odblokuj automatycznie twarzą</string>
     <string name="face_auto_unlock_summary">Nie pokazuj ekrany blokady po odblokowaniu twarzą</string>
@@ -612,5 +615,50 @@
     <string name="status_bar_notif_count_summary">Wyświetla licznik oczekujących powiadomień</string>
     <string name="hall_sensor_enabled_title">Czujnik Halla</string>
     <string name="hall_sensor_enabled_summary">Włącz czujnik Halla, dla etuii z klapką zakrywającą ekran</string>
+
+    <!-- Slim Recents panel -->
+    <string name="slim_recents_title">Panel Slim</string>
+    <string name="use_slim_recents_title">Użyj alternatywnego panelu ostatnich aplikacji</string>
+    <string name="use_slim_recents_summary">Użyj panelu slim zamiast domyślnego widoku panelu ostatnich aplikacji</string>
+    <string name="slim_recents_settings_title">Ustawienia Widoku"</string>
+    <string name="slim_recents_settings_summary">Zobacz ustawienia panelu slim</string>
+    <string name="recents_max_apps_title">Maksymalna ilość dozwolonych aplikacji</string>
+    <string name="recent_panel_scale_title">Rozmiar</string>
+    <string name="recent_panel_expanded_mode_title">Tryb rozszerzony</string>
+    <string name="recent_panel_expanded_mode_summary">Tryb rozszerzonego podglądu w panelu ostatnich aplikacji</string>
+    <string name="recent_panel_expanded_mode_auto">Auto (domyślnie)</string>
+    <string name="recent_panel_expanded_mode_always">Zawsze</string>
+    <string name="recent_panel_expanded_mode_never">Nigdy</string>
+    <string name="recent_panel_bg_color_title">Kolor tła panelu</string>
+    <string name="recent_card_bg_color_title">Kolor tła karty</string>
+    <string name="recent_reset_title">Ustaw kolor domyślny</string>
+    <string name="recent_reset_confirm">Czy na pewno chcesz zresetować kolor Panelu Slim do wartości domyślnej?</string>
+    <string name="default_auto_string">Domyślne (oparte na aplikacji)</string>
+    <string name="slim_recents_corner_radius_title">Użyj zaokrąglonych rogów dla kart</string>
+    <!-- ATTENTION: RTL languages need to replace left with right -->
+    <string name="recent_panel_lefty_mode_title">Pokaż na lewej krawędzi ekranu</string>
+    <string name="recent_panel_lefty_mode_summary">Wyświetlaj aplikacje w panelu ostatnich aplikacji z lewej strony</string>
+    <string name="slim_blacklist_apps_cat_title">Czarna lista</string>
+    <string name="slim_blacklist_apps_title">Czarna lista aplikacji</string>
+    <string name="slim_blacklist_apps_summary">Aplikacje nie wyświetlające się w panelu ostatnich aplikacji</string>
+    <string name="slim_blacklist_add_apps_title">Dodaj aplikacje</string>
+    <string name="slim_blacklist_add_apps_summary">Stuknij tutaj, aby dodać, stuknij w dodaną aplikację, aby ją usunąć</string>
+    <string name="default_string">Domyślnie</string>
+    <string name="slim_recents_hints_footer">Aby wyczyścić wszystkie aplikacje, uszczypnij aplikacje panelu ostatnich aplikacji. Aby zablokować czyszczenie danej aplikacji, naciśnij i przytrzymaj jej ikonę, aby ją oznaczyć gwiazdką.\n\nAby uzyskać dodatkowe funkcje, takie jak podzielenie ekranu lub wyłączanie aplikacji, naciśnij długo w dowolnym miejscu w panelu.</string>
+
+    <string name="aosp_recents_title">Panel ostatnich aplikacji w stylu AOSP</string>
+
+    <string name="long_press_power_torch_delay_title">Opóźnienie włączenia latarki</string>
+    <string name="long_press_power_torch_delay_100">100 ms</string>
+    <string name="long_press_power_torch_delay_150">150 ms</string>
+    <string name="long_press_power_torch_delay_200">200 ms</string>
+    <string name="long_press_power_torch_delay_250">250 ms</string>
+    <string name="long_press_power_torch_delay_300">300 ms</string>
+    <string name="long_press_power_torch_delay_350">350 ms</string>
+    <string name="long_press_power_torch_delay_400">400 ms</string>
+    <string name="long_press_power_torch_delay_450">450 ms</string>
+    <string name="long_press_power_torch_delay_500">500 ms</string>
+
+    <string name="torch_power_button_gesture_haptic_feedback_enable_title">Wibruj przy włączeniu latarki</string>
 
 </resources>
