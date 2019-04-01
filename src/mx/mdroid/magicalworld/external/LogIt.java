@@ -57,7 +57,7 @@ import java.util.zip.ZipOutputStream;
 import com.android.internal.logging.nano.MetricsProto;
 import com.android.settings.R;
 import com.android.settings.SettingsPreferenceFragment;
-import mx.mdroid.magicalworld.extra.Utils;
+import mx.mdroid.magicalworld.extra.MDroidUtils;
 import mx.mdroid.magicalworld.extra.SuShell;
 
 public class LogIt extends SettingsPreferenceFragment 
@@ -446,28 +446,28 @@ public class LogIt extends SettingsPreferenceFragment
                     makeLogcat();
                     if (shareHaste) {
                         sharingIntentString += "\n\nLogcat: " +
-                                Utils.readStringFromFile(logcatHasteKey);
+                                MDroidUtils.readStringFromFile(logcatHasteKey);
                     }
                 }
                 if (params[1]) {
                     makeLogcatRadio();
                     if (shareHaste) {
                         sharingIntentString += "\nRadio log: " +
-                                Utils.readStringFromFile(logcatRadioHasteKey);
+                                MDroidUtils.readStringFromFile(logcatRadioHasteKey);
                     }
                 }
                 if (params[2]) {
                     makeKmsg();
                     if (shareHaste) {
                         sharingIntentString += "\nKmsg: " +
-                                Utils.readStringFromFile(kmsgHasteKey);
+                                MDroidUtils.readStringFromFile(kmsgHasteKey);
                     }
                 }
                 if (params[3]) {
                     makeDmesg();
                     if (shareHaste) {
                         sharingIntentString += "\nDmesg: " +
-                                Utils.readStringFromFile(dmesgHasteKey);
+                                MDroidUtils.readStringFromFile(dmesgHasteKey);
                     }
                 }
                 if (shareZip) {

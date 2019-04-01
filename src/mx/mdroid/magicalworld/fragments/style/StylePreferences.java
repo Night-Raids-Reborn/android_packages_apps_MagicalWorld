@@ -78,6 +78,9 @@ import java.util.Calendar;
 import java.util.List;
 import java.util.TimeZone;
 
+import mx.mdroid.magicalworld.extra.MDroidUtils;
+import android.graphics.drawable.AdaptiveIconDrawable;
+
 public class StylePreferences extends SettingsPreferenceFragment
         implements MDroidController.Callback {
     private static final String TAG = "Style";
@@ -175,6 +178,8 @@ public class StylePreferences extends SettingsPreferenceFragment
         mSwitchStyle.setValueIndex(switchStyleValueIndex >= 0 ? switchStyleValueIndex : 0);
         mSwitchStyle.setSummary(mSwitchStyle.getEntry());
         mSwitchStyle.setOnPreferenceChangeListener(this::onSwitchStyleChange);
+
+        findPreference(AdaptiveIconDrawable.MASK_SETTING_PROP).setOnPreferenceChangeListener(this::onAdaptiveIconChange);
     }
 
     @Override
@@ -482,6 +487,22 @@ public class StylePreferences extends SettingsPreferenceFragment
         int valueIndex = mSwitchStyle.findIndexOfValue(String.valueOf(switchStyle));
         mSwitchStyle.setValueIndex(valueIndex >= 0 ? valueIndex : 0);
         mSwitchStyle.setSummary(mSwitchStyle.getEntry());
+
+        return true;
+    }
+
+    private boolean onAdaptiveIconChange(Preference preference, Object newValue) {
+        Integer value;
+        if (newValue instanceof String) {
+            value = Integer.valueOf((String) newValue);
+        } else if (newValue instanceof Integer) {
+            value = (Integer) newValue;
+        } else {
+            return false;
+        }
+
+        MDroidUtils.showRebootDialog(getContext(), getString(R.string.icon_shape_changed_title),
+                getString(R.string.icon_shape_changed_message), true);
 
         return true;
     }

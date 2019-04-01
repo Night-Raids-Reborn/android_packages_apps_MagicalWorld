@@ -53,6 +53,14 @@
         android:key="style_accent"
         android:title="@string/style_accent_title" />
 
+    <mx.mdroid.magicalworld.preferences.SystemPropListPreference
+        android:key="persist.mdroid.iconshape"
+        android:icon="@drawable/ic_style_icon_shape"
+        android:title="@string/icon_shape_title"
+        android:entries="@array/icon_shape_entries"
+        android:entryValues="@array/icon_shape_values"
+        android:defaultValue="0" />
+
     <ListPreference
         android:key="switch_style"
         android:icon="@drawable/ic_switch_style"

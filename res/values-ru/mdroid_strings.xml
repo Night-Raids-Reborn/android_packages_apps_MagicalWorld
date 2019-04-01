@@ -809,4 +809,21 @@
     <string name="theme_start_time_title">"Время включения"</string>
     <string name="theme_end_time_title">"Время отключения"</string>
 
+    <!-- Adaptive icon shape -->
+    <string name="icon_shape_title">Форма значка</string>
+    <string name="icon_shape_system_default">По умолчанию</string>
+    <string name="icon_shape_square">Квадрат</string>
+    <string name="icon_shape_rounded_square">Квадрат со скругленными углами</string>
+    <string name="icon_shape_squircle">Закругленный квадрат</string>
+    <string name="icon_shape_circle">Круг</string>
+    <string name="icon_shape_teardrop">Каплевидная</string>
+    <string name="icon_shape_hexagon">Шестиугольник</string>
+    <string name="icon_shape_changed_title">Обновить форму значка</string>
+    <string name="icon_shape_changed_message">Изменение формы значка повлияет только на новые запущенные приложения. Таким образом, рекомендуется перезагрузить устройство, чтобы полностью применить этот параметр. Если после этого некоторые приложения все еще используют старую форму, попробуйте очистить кэш приложений.</string>
+
+    <string name="reboot_dialog_ok">Перезагрузить</string>
+    <string name="reboot_dialog_cancel">@string/cancel</string>
+    <string name="soft_reboot_title">Перезагрузка</string>
+    <string name="soft_reboot_message">Идет мягкая перезагрузка, наберитесь терпения</string>
+
 </resources>

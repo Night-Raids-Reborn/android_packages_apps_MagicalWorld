@@ -16,7 +16,7 @@ import com.android.settings.R;
 
 import com.android.settings.SettingsPreferenceFragment;
 
-import mx.mdroid.magicalworld.extra.Utils;
+import mx.mdroid.magicalworld.extra.MDroidUtils;
 
 public class NotificationSettings extends SettingsPreferenceFragment
                         implements OnPreferenceChangeListener {
@@ -44,7 +44,7 @@ public class NotificationSettings extends SettingsPreferenceFragment
         mTickerMode.setSummary(mTickerMode.getEntry());
 
         PreferenceCategory incallVibCategory = (PreferenceCategory) findPreference(INCALL_VIB_OPTIONS);
-        if (!Utils.isVoiceCapable(getActivity())) {
+        if (!MDroidUtils.isVoiceCapable(getActivity())) {
             prefScreen.removePreference(incallVibCategory);
         }
 
@@ -56,7 +56,7 @@ public class NotificationSettings extends SettingsPreferenceFragment
         mFlashlightOnCall.setSummary(mFlashlightOnCall.getEntry());
         mFlashlightOnCall.setOnPreferenceChangeListener(this);
 
-        if (!Utils.deviceSupportsFlashLight(getActivity())) {
+        if (!MDroidUtils.deviceSupportsFlashLight(getActivity())) {
             prefScreen.removePreference(FlashOnCall);
         }
     }

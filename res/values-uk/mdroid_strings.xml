@@ -809,4 +809,21 @@
     <string name="theme_start_time_title">"Час початку"</string>
     <string name="theme_end_time_title">"Час завершення"</string>
 
+    <!-- Adaptive icon shape -->
+    <string name="icon_shape_title">Форма значка</string>
+    <string name="icon_shape_system_default">За замовчуванням</string>
+    <string name="icon_shape_square">Квадрат</string>
+    <string name="icon_shape_rounded_square">Квадрат з округленими кутами</string>
+    <string name="icon_shape_squircle">Заокруглений квадрат</string>
+    <string name="icon_shape_circle">Коло</string>
+    <string name="icon_shape_teardrop">Краплеподібна</string>
+    <string name="icon_shape_hexagon">Шестиугольник</string>
+    <string name="icon_shape_changed_title">Оновити форму значка</string>
+    <string name="icon_shape_changed_message">Зміна форми значка вплине лише на нові запущені додатки. Таким чином, рекомендується перезавантажити пристрій, щоб повністю застосувати це налаштування. Якщо після цього деякі додатки все ще використовують стару форму, спробуйте очистити кеш додатків.</string>
+
+    <string name="reboot_dialog_ok">Перезавантажити</string>
+    <string name="reboot_dialog_cancel">@string/cancel</string>
+    <string name="soft_reboot_title">Перезавантаження</string>
+    <string name="soft_reboot_message">Виконується м\'яке перезавантаження, будьте терплячими</string>
+
 </resources>
