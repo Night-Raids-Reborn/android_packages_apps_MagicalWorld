@@ -51,6 +51,12 @@
         android:defaultValue="false" />
 
     <mx.mdroid.magicalworld.preferences.SystemSettingSwitchPreference
+        android:key="qs_tile_title_tinting_enable"
+        android:title="@string/qs_tile_title_theme_title"
+        android:summary="@string/qs_tile_title_theme_summary"
+        android:defaultValue="false" />
+
+    <mx.mdroid.magicalworld.preferences.SystemSettingSwitchPreference
         android:key="qs_tile_title_visibility"
         android:title="@string/qs_tile_title_visibility_title"
         android:summary="@string/qs_tile_title_visibility_summary"

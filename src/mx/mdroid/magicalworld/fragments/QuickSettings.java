@@ -35,11 +35,13 @@ public class QuickSettings extends SettingsPreferenceFragment implements
     private static final String QUICK_PULLDOWN = "quick_pulldown";
     private static final String PREF_SMART_PULLDOWN = "smart_pulldown";
     private static final String QS_TILE_TINTING = "qs_tile_tinting_enable";
+    private static final String QS_TILE_TITLE_TINTING = "qs_tile_title_tinting_enable";
 
     private CustomSeekBarPreference mQsPanelAlpha;
     private ListPreference mQuickPulldown;
     ListPreference mSmartPulldown;
     private SwitchPreference mEnableQsTileTinting;
+    private SwitchPreference mEnableQsTileTitleTinting;
 
     @Override
     public void onCreate(Bundle icicle) {
@@ -75,6 +77,12 @@ public class QuickSettings extends SettingsPreferenceFragment implements
         mEnableQsTileTinting.setChecked(Settings.System.getInt(resolver,
                 Settings.System.QS_TILE_TINTING_ENABLE, 0) != 0);
         mEnableQsTileTinting.setOnPreferenceChangeListener(this);
+
+        //QS Tile Theme
+        mEnableQsTileTitleTinting = (SwitchPreference) findPreference(QS_TILE_TITLE_TINTING);
+        mEnableQsTileTitleTinting.setChecked(Settings.System.getInt(resolver,
+                Settings.System.QS_TILE_TITLE_TINTING_ENABLE, 0) != 0);
+        mEnableQsTileTitleTinting.setOnPreferenceChangeListener(this);
     }
 
     private void updatePulldownSummary(int value) {
@@ -134,6 +142,12 @@ public class QuickSettings extends SettingsPreferenceFragment implements
             boolean value = (Boolean) newValue;
             Settings.System.putInt(resolver,
                     Settings.System.QS_TILE_TINTING_ENABLE, value ? 1 : 0);
+            MDroidUtils.showSystemUiRestartDialog(getContext());
+            return true;
+        } else if (preference == mEnableQsTileTitleTinting) {
+            boolean value = (Boolean) newValue;
+            Settings.System.putInt(resolver,
+                    Settings.System.QS_TILE_TITLE_TINTING_ENABLE, value ? 1 : 0);
             MDroidUtils.showSystemUiRestartDialog(getContext());
             return true;
         }

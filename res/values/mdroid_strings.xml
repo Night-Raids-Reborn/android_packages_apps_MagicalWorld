@@ -669,7 +669,9 @@
 
     <!-- QS Tile Theme/Tinting -->
     <string name="qs_tile_theme_title">QS Tile Accents</string>
-    <string name="qs_tile_theme_summary">It will enable Device Accent on QS Tiles n Titles</string>
+    <string name="qs_tile_theme_summary">It will enable Device Accent on QS Tiles</string>
+    <string name="qs_tile_title_theme_title">QS Tile title Accents</string>
+    <string name="qs_tile_title_theme_summary">It will enable Device Accent on QS Tiles titles</string>
 
     <string name="enable_home_key_when_ringing_title">Enable Home key when ringing</string>
     <string name="enable_home_key_when_ringing_summary">Allow to use Home key when there\'s a ringing incoming call</string>
