@@ -297,7 +297,7 @@
     <string name="lockscreen_visualizer_enable_custom_summary">Użyj własnego koloru zamiast wygenerowanego automatycznie</string>
     <string name="lockscreen_visualizer_custom_color">Kolor spektrogramu</string>
     <!-- Suspend actions -->
-    <string name="screen_state_toggles_title">Zaniechaj działania</string>
+    <string name="screen_state_toggles_title">Akcje po wyłączeniu ekranu</string>
     <string name="screen_state_toggles_enable_title">Włączone</string>
     <string name="screen_state_toggles_enable_summary">Akcje będą wykonywane po wyłączeniu ekranu. Zostaną przywrócone do poprzedniego stanu po włączeniu ekranu.</string>
     <string name="screen_state_toggles_mobile_title">Sieci komórkowe</string>
