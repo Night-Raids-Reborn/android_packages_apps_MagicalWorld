@@ -576,6 +576,8 @@
     <!-- QS Tile Theme/Tinting -->
     <string name="qs_tile_theme_title">Kolor przełączników szybkich ustawień</string>
     <string name="qs_tile_theme_summary">Umożliwi to pokolorowanie przełączników szybkich ustawień akcentem wybranym w ustawieniach motywu urządzenia</string>
+    <string name="qs_tile_title_theme_title">Kolor czcionki pod ikonami szybkich ustawień</string>
+    <string name="qs_tile_title_theme_summary">Zastosowanie tej funkcji zmieni kolor podpisów na kolor akcentu urządzenia</string>
     <string name="enable_home_key_when_ringing_title">Włącz klawisz Home podczas dzwonienia</string>
     <string name="enable_home_key_when_ringing_summary">Zezwól na użycie klawisza Home, podczas połączenia przychodzącego</string>
      <!-- XOSP Blur personalizations -->
