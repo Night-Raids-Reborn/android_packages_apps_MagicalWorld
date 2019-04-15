@@ -293,16 +293,6 @@ public class StylePreferences extends SettingsPreferenceFragment {
             return false;
         }
 
-        int oldValue = Settings.System.getInt(getContext().getContentResolver(),
-            Settings.System.NOTIFICATION_STYLE, 0);
-
-        if (oldValue != value){
-            try {
-                reload();
-            }catch (Exception ignored){
-            }
-        }
-
         Settings.System.putInt(getContext().getContentResolver(),
                 Settings.System.NOTIFICATION_STYLE, value);
 
