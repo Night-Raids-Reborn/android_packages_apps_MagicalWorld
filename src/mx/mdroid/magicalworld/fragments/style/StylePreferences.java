@@ -236,11 +236,12 @@ public class StylePreferences extends SettingsPreferenceFragment {
     }
 
     private void applyStyle(Style style) {
-        int value = style.isLight() ? INDEX_LIGHT : INDEX_DARK;
+        int valueStyle = style.isLight() ? INDEX_LIGHT : INDEX_DARK;
+        int valueNotificationStyle = style.isLight() ? INDEX_NOTIFICATION_LIGHT : INDEX_NOTIFICATION_DARK;
 
-        onStyleChange(mStylePref, value);
+        onStyleChange(mStylePref, valueStyle);
         onAccentSelected(style.getAccent());
-        onNotificationStyleChange(mStylePref, value);
+        onNotificationStyleChange(mNotificationStyle, valueNotificationStyle);
     }
 
     private boolean onStyleChange(Preference preference, Object newValue) {
@@ -305,9 +306,11 @@ public class StylePreferences extends SettingsPreferenceFragment {
         Settings.System.putInt(getContext().getContentResolver(),
                 Settings.System.NOTIFICATION_STYLE, value);
 
-		String style = (String) newValue;
-		int valueIndex = mNotificationStyle.findIndexOfValue(style);
-        mNotificationStyle.setSummary(mNotificationStyle.getEntries()[valueIndex]);
+        int notificationStyle = Settings.System.getInt(getContext().getContentResolver(),
+                Settings.System.NOTIFICATION_STYLE, 0);
+        int valueIndex = mNotificationStyle.findIndexOfValue(String.valueOf(notificationStyle));
+        mNotificationStyle.setValueIndex(valueIndex >= 0 ? valueIndex : 0);
+        mNotificationStyle.setSummary(mNotificationStyle.getEntry());
 
         setupNotificatioStylePref();
         return true;
