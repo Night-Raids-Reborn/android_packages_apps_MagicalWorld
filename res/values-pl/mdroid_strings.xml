@@ -207,6 +207,17 @@
     <string name="notification_light">Jasny</string>
     <string name="notification_dark">Ciemny</string>
     <string name="notification_black">Czarny</string>
+
+    <!-- QS tile styles -->
+    <string name="qs_tile_style_title">Styl przełączników szybkich ustawień</string>
+    <string name="qstile_default">Domyślny</string>
+    <string name="qstile_circle">Okrągłe</string>
+    <string name="qstile_circle_trim">Okrągłe z wypełnieniem</string>
+    <string name="qstile_dual_tone_circle">Dwukolorowy okrąg</string>
+    <string name="qstile_squircle">Kwadratowe</string>
+    <string name="qstile_squircle_trim">Kwadratowe z wypełnieniem</string>
+    <string name="qstile_teardrop">Łezka</string>
+
     <!-- QS rows and columns -->
     <string name="qs_rows_columns_title">Kolumny i wiersze szybkich ustawień</string>
     <string name="qs_rows_portrait_title">Ilość rzędów w pionie</string>
@@ -662,5 +673,7 @@
     <string name="long_press_power_torch_delay_500">500 ms</string>
 
     <string name="torch_power_button_gesture_haptic_feedback_enable_title">Wibruj przy włączeniu latarki</string>
+
+
 
 </resources>
