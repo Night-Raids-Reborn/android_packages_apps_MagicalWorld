@@ -241,7 +241,9 @@
     <string name="qstile_circle">Коло</string>
     <string name="qstile_circle_trim">Коло з окантовкою</string>
     <string name="qstile_dual_tone_circle">Двотонове коло</string>
+    <string name="qstile_squircle">Квадрат з округленими кутами</string>
     <string name="qstile_squircle_trim">Квадрат з округленими кутами і окантовкою</string>
+    <string name="qstile_teardrop">Краплеподібний</string>
 
     <!-- QS rows and columns -->
     <string name="qs_rows_columns_title">Рядки і стовпці</string>

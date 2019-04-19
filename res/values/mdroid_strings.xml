@@ -241,7 +241,9 @@
     <string name="qstile_circle">Circle</string>
     <string name="qstile_circle_trim">Circle with trim</string>
     <string name="qstile_dual_tone_circle">Dual-toned circle</string>
+    <string name="qstile_squircle">Squircle</string>
     <string name="qstile_squircle_trim">Squircle with trim</string>
+    <string name="qstile_teardrop">TearDrop</string>
 
     <!-- QS rows and columns -->
     <string name="qs_rows_columns_title">QS rows and columns</string>

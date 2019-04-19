@@ -241,7 +241,9 @@
     <string name="qstile_circle">Круг</string>
     <string name="qstile_circle_trim">Круг с окантовкой</string>
     <string name="qstile_dual_tone_circle">Двухтоновый круг</string>
+    <string name="qstile_squircle">Квадрат со скругленными углами</string>
     <string name="qstile_squircle_trim">Квадрат со скругленными углами и окантовкой</string>
+    <string name="qstile_teardrop">Каплевидный</string>
 
     <!-- QS rows and columns -->
     <string name="qs_rows_columns_title">Строки и столбцы</string>
