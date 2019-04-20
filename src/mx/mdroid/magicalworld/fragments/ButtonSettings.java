@@ -51,6 +51,7 @@ public class ButtonSettings extends ActionFragment implements
     private static final String HWKEY_DISABLE = "hardware_keys_disable";
     private static final String KEY_VOLUME_KEY_CURSOR_CONTROL = "volume_key_cursor_control";
     private static final String KEY_HOME_ANSWER_CALL = "home_answer_call";
+    private static final String KEY_HOME_KEY_WHEN_RINGING = "enable_home_key_when_ringing";
 
     //Keys
     private static final String KEY_BUTTON_BRIGHTNESS = "button_brightness";
@@ -82,6 +83,7 @@ public class ButtonSettings extends ActionFragment implements
     private SwitchPreference mButtonBrightness_sw;
     private SwitchPreference mButtonBacklightOnTouch;
     private SwitchPreference mHomeAnswerCall;
+    private SwitchPreference mHomeKeyWhenRinging;
 
     private ListPreference mTorchPowerButton;
     private ListPreference mTorchPowerButtonLongPressDelay;
@@ -108,6 +110,8 @@ public class ButtonSettings extends ActionFragment implements
 
         // Home button answers calls.
         mHomeAnswerCall = (SwitchPreference) findPreference(KEY_HOME_ANSWER_CALL);
+
+        mHomeKeyWhenRinging = (SwitchPreference) findPreference(KEY_HOME_KEY_WHEN_RINGING);
 
         if (!MDroidUtils.deviceSupportsFlashLight(getContext())) {
             Preference toRemove = prefSet.findPreference(TORCH_POWER_BUTTON_GESTURE);
@@ -214,7 +218,10 @@ public class ButtonSettings extends ActionFragment implements
                 }
                 if (mHomeAnswerCall != null) {
                     mHomeAnswerCall.setEnabled(false);
-                } 
+                }
+                if (mHomeKeyWhenRinging != null) {
+                    mHomeKeyWhenRinging.setEnabled(false);
+                }
             } else {
                 if (mButtonBrightness_sw != null) {
                     mButtonBrightness_sw.setEnabled(true);
@@ -230,6 +237,9 @@ public class ButtonSettings extends ActionFragment implements
                 }
                 if (mHomeAnswerCall != null) {
                     mHomeAnswerCall.setEnabled(true);
+                }
+                if (mHomeKeyWhenRinging != null) {
+                    mHomeKeyWhenRinging.setEnabled(true);
                 }
             }
         }
@@ -270,6 +280,8 @@ public class ButtonSettings extends ActionFragment implements
             if (!Utils.isVoiceCapable(getActivity())) {
                 homeCategory.removePreference(mHomeAnswerCall);
                 mHomeAnswerCall = null;
+                homeCategory.removePreference(mHomeKeyWhenRinging);
+                mHomeKeyWhenRinging = null;
             }
         }
 
@@ -389,6 +401,9 @@ public class ButtonSettings extends ActionFragment implements
             }
             if (mHomeAnswerCall != null) {
                 mHomeAnswerCall.setEnabled(!value);
+            }
+            if (mHomeKeyWhenRinging != null) {
+                mHomeKeyWhenRinging.setEnabled(!value);
             }
             return true;
         } else if (preference == mBacklightTimeout) {
