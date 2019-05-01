@@ -774,4 +774,6 @@
     <string name="srec_enable_mic_title">Использовать микрофон при записи экрана</string>
     <string name="srec_enable_mic_summary">Использовать микрофон как источник звука во время записи экрана</string>
 
+    <string name="pie_volume_dialog_title">Панель громкости в стиле Android P</string>
+
 </resources>

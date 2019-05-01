@@ -774,4 +774,6 @@
     <string name="srec_enable_mic_title">Use microphone for screen recording</string>
     <string name="srec_enable_mic_summary">Use microphone as audio input during screen recording</string>
 
+    <string name="pie_volume_dialog_title">Android P Volume panel style</string>
+
 </resources>

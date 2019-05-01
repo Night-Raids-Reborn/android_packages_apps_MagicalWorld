@@ -99,6 +99,11 @@
         android:summary="@string/toast_icon_summary"
         android:defaultValue="false" />
 
+    <mx.mdroid.magicalworld.preferences.SystemSettingSwitchPreference
+        android:key="pie_volume_dialog"
+        android:title="@string/pie_volume_dialog_title"
+        android:defaultValue="false" />
+
     <PreferenceScreen
         android:key="screenstate_category"
         android:title="@string/screen_state_toggles_title"
