@@ -168,7 +168,8 @@
     <string name="show_battery_percent_title">Відсоток заряду</string>
     <string name="battery_style_category_title">Іконка батареї</string>
     <string name="battery_percent_none">Не відображати</string>
-    <string name="battery_percent_outside">Поруч з іконкою</string>
+    <string name="battery_percent_outside">Поруч з іконкою (ліворуч)</string>
+    <string name="battery_percent_outside_right">Поруч з іконкою (праворуч)</string>
     <string name="battery_percent_inside">Усередині іконки</string>
 
     <!-- Buttons backlight timeout -->
