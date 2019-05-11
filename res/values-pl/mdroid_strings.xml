@@ -695,6 +695,6 @@
     <string name="lockscreen_date_selection_str_box">Półprzeźroczyste okienko</string>
     <string name="lockscreen_date_selection_str_round">Półprzeźroczyste okienko (zaokrąglone rogi)</string>
     <string name="hide_lockscreen_alarm_title">Budzik na ekranie blokady</string>
-    <string name="hide_lockscreen_alarm_summary"Ustaw widoczność daty i godziny pobudki na ekranie blokady</string>
+    <string name="hide_lockscreen_alarm_summary">Ustaw widoczność daty i godziny pobudki na ekranie blokady</string>
 
 </resources>
