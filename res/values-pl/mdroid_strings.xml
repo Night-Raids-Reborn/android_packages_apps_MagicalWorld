@@ -674,6 +674,27 @@
 
     <string name="torch_power_button_gesture_haptic_feedback_enable_title">Wibruj przy włączeniu latarki</string>
 
+    <string name="pie_volume_dialog_title">Styl panelu głośności z Androida Pie</string>
 
+    <!-- Hide Lockscreen clock, date, & alarm -->
+    <string name="lockscreen_item_title">Widoczność elementów ekranu blokady</string>
+    <string name="lockscreen_item_summary">Ukryj zegar, datę czy budzik</string>
+    <string name="hide_lockscreen_clock_title">Zegar na ekranie blokady</string>
+    <string name="hide_lockscreen_clock_summary">Ustaw widoczność widzetu zegara na ekranie blokady</string>
+    <string name="lockscreen_clock_selection_title">Styl widzętu zegara</string>
+    <string name="lockscreen_clock_selection_digital">Domyślny</string>
+    <string name="lockscreen_clock_selection_digital_bold">Cyfrowy (pogrubiony)</string>
+    <string name="lockscreen_clock_selection_sammy">Sony</string>
+    <string name="lockscreen_clock_selection_sammy_bold">Sony (pogrubiony)</string>
+    <string name="lockscreen_clock_selection_analog">Analogowy</string>
+    <string name="hide_lockscreen_date_title">Data na ekranie blokady</string>
+    <string name="hide_lockscreen_date_summary">Ustaw widoczność daty na ekranie blokady</string>
+    <string name="lockscreen_date_selection_title">Styl daty</string>
+    <string name="lockscreen_date_selection_default_aosp">Domyślny</string>
+    <string name="lockscreen_date_selection_default">Domyślny (Większy rozmiar)</string>
+    <string name="lockscreen_date_selection_str_box">Półprzeźroczyste okienko</string>
+    <string name="lockscreen_date_selection_str_round">Półprzeźroczyste okienko (zaokrąglone rogi)</string>
+    <string name="hide_lockscreen_alarm_title">Budzik na ekranie blokady</string>
+    <string name="hide_lockscreen_alarm_summary"Ustaw widoczność daty i godziny pobudki na ekranie blokady</string>
 
 </resources>
