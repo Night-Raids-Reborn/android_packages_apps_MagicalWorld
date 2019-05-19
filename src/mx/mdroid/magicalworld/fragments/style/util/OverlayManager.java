@@ -60,6 +60,14 @@ public class OverlayManager {
         }
     }
 
+    public void reloadAssets(@NonNull String pkg) {
+        mHelper.reloadAssets(pkg, UserHandle.myUserId());
+    }
+
+    public void reloadAndroidAssets() {
+        mHelper.reloadAndroidAssets(UserHandle.myUserId());
+    }
+
     static class OverlayHelper {
         private final IOverlayManager mService;
 
@@ -80,6 +88,20 @@ public class OverlayManager {
             } catch (RemoteException ignored) {
             }
             return false;
+        }
+
+        public void reloadAssets(@NonNull String pkg, int userId) {
+            try {
+                mService.reloadAssets(pkg, userId);
+            } catch (RemoteException ignored) {
+            }
+        }
+
+        public void reloadAndroidAssets(int userId) {
+            try {
+                mService.reloadAndroidAssets(userId);
+            } catch (RemoteException ignored) {
+            }
         }
     }
 }

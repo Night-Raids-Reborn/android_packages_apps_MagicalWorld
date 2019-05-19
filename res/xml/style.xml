@@ -49,9 +49,12 @@
         android:entries="@array/notification_style_entries"
         android:entryValues="@array/notification_style_values" />
 
-    <Preference
-        android:key="style_accent"
-        android:title="@string/style_accent_title" />
+    <net.margaritov.preference.colorpicker.ColorPickerPreference
+        android:key="accent_color"
+        android:icon="@drawable/ic_style_accent"
+        android:title="@string/style_accent_title"
+        android:defaultValue="0xffffff"
+        android:persistent="false" />
 
     <mx.mdroid.magicalworld.preferences.SystemPropListPreference
         android:key="persist.mdroid.iconshape"
@@ -68,12 +71,6 @@
         android:persistent="false"
         android:entries="@array/switch_style_entries"
         android:entryValues="@array/switch_style_values" />
-
-    <Preference
-        android:key="style_automagic"
-        android:icon="@drawable/ic_automagic"
-        android:summary="@string/style_automagic_description"
-        android:title="@string/style_automagic_title" />
 
     <Preference
         android:key="restart_systemui"

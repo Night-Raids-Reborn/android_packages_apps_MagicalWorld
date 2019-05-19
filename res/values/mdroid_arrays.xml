@@ -282,33 +282,6 @@
         <item>6</item>
     </string-array>
 
-    <!-- Supported accent packages -->
-    <string-array name="accent_packages" translatable="false">
-        <item>mx.mdroid.accent.red</item>
-        <item>mx.mdroid.accent.netflix</item>
-        <item>mx.mdroid.accent.pink</item>
-        <item>mx.mdroid.accent.purple</item>
-        <item>mx.mdroid.accent.purple_deep</item>
-        <item>mx.mdroid.accent.indigo</item>
-        <item>mx.mdroid.accent.pixel</item>
-        <item>mx.mdroid.accent.blue</item>
-        <item>mx.mdroid.accent.blue_light</item>
-        <item>mx.mdroid.accent.cyan</item>
-        <item>mx.mdroid.accent.teal</item>
-        <item>mx.mdroid.accent.green</item>
-        <item>mx.mdroid.accent.green_light</item>
-        <item>mx.mdroid.accent.lime</item>
-        <item>mx.mdroid.accent.yellow</item>
-        <item>mx.mdroid.accent.amber</item>
-        <item>mx.mdroid.accent.orange</item>
-        <item>mx.mdroid.accent.orange_deep</item>
-        <item>mx.mdroid.accent.brown</item>
-        <item>mx.mdroid.accent.grey</item>
-        <item>mx.mdroid.accent.grey_blue</item>
-        <item>mx.mdroid.accent.black</item>
-        <item>mx.mdroid.accent.white</item>
-    </string-array>
-
      <!-- Ticker mode -->
     <string-array name="ticker_mode_entries">
         <item>@string/ticker_disabled</item>

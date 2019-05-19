@@ -19,18 +19,7 @@ import android.support.annotation.NonNull;
 
 public class Style {
     @NonNull
-    private Accent accent;
     private boolean isLight;
-
-    public Style(@NonNull Accent accent, boolean isLight) {
-        this.accent = accent;
-        this.isLight = isLight;
-    }
-
-    @NonNull
-    public Accent getAccent() {
-        return accent;
-    }
 
     public boolean isLight() {
         return isLight;

@@ -217,13 +217,6 @@
     <string name="style_global_entry_black">Чорна</string>
     <string name="style_global_entry_time">Автоматично (день/ніч)</string>
     <string name="style_accent_title">Колір акценту</string>
-    <string name="style_accent_configuration_not_supported">Поточний акцент не сумісний із вибраною темою. Щоб продовжити, потрібно вибрати інший акцент, бажаєте продовжити?</string>
-    <string name="style_accent_configuration_positive">Продовжити</string>
-    <string name="style_automagic_title">Автомагія</string>
-    <string name="style_automagic_description">Налаштування теми відповідно до шпалер</string>
-    <string name="style_automagic_dialog_content">Пропонована тема: <b>%1$s</b> з <b>%2$s</b> акцентом.\nБажаєте застосувати її?</string>
-    <string name="style_automagic_dialog_positive">Застосувати</string>
-    <string name="style_accent_default_name">За замовчуванням</string>
     <string name="style_restart_title">Перезапустити SystemUI</string>
     <string name="style_restart_summary">Перезапустіть SystemUI, якщо застосована тема викликає проблеми</string>
     <string name="theme_applied_toast">Тема застосована.</string>
