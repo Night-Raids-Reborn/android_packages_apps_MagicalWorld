@@ -483,7 +483,6 @@ public class StylePreferences extends SettingsPreferenceFragment
         mSwitchStyle.setValueIndex(valueIndex >= 0 ? valueIndex : 0);
         mSwitchStyle.setSummary(mSwitchStyle.getEntry());
 
-        setupNotificatioStylePref();
         return true;
     }
 
