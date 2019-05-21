@@ -19,6 +19,8 @@ package mx.mdroid.magicalworld.fragments.style;
 import android.app.ActivityManager;
 import android.app.ActivityManagerNative;
 import android.app.AlertDialog;
+import android.app.Dialog;
+import android.app.TimePickerDialog;
 import android.content.ComponentName;
 import android.content.Context;
 import android.content.ContentResolver;
@@ -28,6 +30,7 @@ import android.content.res.Resources;
 import android.os.Bundle;
 import android.os.Handler;
 import android.os.UserHandle;
+import android.support.v7.preference.DropDownPreference;
 import android.support.v7.preference.Preference;
 import android.support.v7.preference.Preference.OnPreferenceChangeListener;
 import android.support.v7.preference.PreferenceCategory;
@@ -49,8 +52,10 @@ import android.support.annotation.Nullable;
 import android.support.v7.graphics.Palette;
 import android.text.TextUtils;
 import android.util.Log;
+import android.widget.TimePicker;
 import android.widget.Toast;
 
+import com.android.internal.app.MDroidController;
 import com.android.settings.R;
 import com.android.settings.SettingsPreferenceFragment;
 import com.android.internal.logging.nano.MetricsProto.MetricsEvent;
@@ -66,16 +71,28 @@ import mx.mdroid.magicalworld.fragments.style.util.AccentUtils;
 import mx.mdroid.magicalworld.fragments.style.util.OverlayManager;
 import mx.mdroid.magicalworld.fragments.style.util.UIUtils;
 
-import java.util.List;
 import java.lang.reflect.Method;
+import java.text.DateFormat;
+import java.time.LocalTime;
+import java.util.Calendar;
+import java.util.List;
+import java.util.TimeZone;
 
-public class StylePreferences extends SettingsPreferenceFragment {
+public class StylePreferences extends SettingsPreferenceFragment
+        implements MDroidController.Callback {
     private static final String TAG = "Style";
     private static final int INDEX_WALLPAPER = 0;
     private static final int INDEX_TIME = 1;
     private static final int INDEX_LIGHT = 2;
     private static final int INDEX_DARK = 3;
     private static final int INDEX_BLACK = 4;
+
+    private static final String KEY_THEME_AUTO_MODE = "theme_auto_mode";
+    private static final String KEY_THEME_START_TIME = "theme_start_time";
+    private static final String KEY_THEME_END_TIME = "theme_end_time";
+
+    private static final int DIALOG_START_TIME = 0;
+    private static final int DIALOG_END_TIME = 1;
 
     private static final int INDEX_NOTIFICATION_THEME = 0;
     private static final int INDEX_NOTIFICATION_LIGHT = 1;
@@ -84,10 +101,16 @@ public class StylePreferences extends SettingsPreferenceFragment {
     private static final String NOTIFICATION_STYLE = "notification_style";
     private static final String SWITCH_STYLE = "switch_style";
 
+    private MDroidController mController;
+    private DateFormat mTimeFormatter;
+
     private Preference mStylePref;
     private Preference mAccentPref;
     private ListPreference mNotificationStyle;
     private ListPreference mSwitchStyle;
+    private DropDownPreference mAutoModePreference;
+    private Preference mStartTimePreference;
+    private Preference mEndTimePreference;
 
     private List<Accent> mAccents;
 
@@ -103,8 +126,26 @@ public class StylePreferences extends SettingsPreferenceFragment {
 
         ContentResolver resolver = getActivity().getContentResolver();
 
+        final Context context = getContext();
+        mController = new MDroidController(context);
+
+        mTimeFormatter = android.text.format.DateFormat.getTimeFormat(context);
+        mTimeFormatter.setTimeZone(TimeZone.getTimeZone("UTC"));
+
         mStylePref = findPreference("theme_global_style");
         mStylePref.setOnPreferenceChangeListener(this::onStyleChange);
+        mAutoModePreference = (DropDownPreference) findPreference(KEY_THEME_AUTO_MODE);
+        mStartTimePreference = findPreference(KEY_THEME_START_TIME);
+        mEndTimePreference = findPreference(KEY_THEME_END_TIME);
+        mAutoModePreference.setEntries(new CharSequence[] {
+                getString(R.string.theme_auto_mode_custom),
+                getString(R.string.theme_auto_mode_twilight)
+        });
+        mAutoModePreference.setEntryValues(new CharSequence[] {
+                String.valueOf(MDroidController.AUTO_MODE_CUSTOM),
+                String.valueOf(MDroidController.AUTO_MODE_TWILIGHT)
+        });
+        mAutoModePreference.setOnPreferenceChangeListener(this::onAutoModePreferenceChange);
         setupStylePref();
 
         mNotificationStyle = (ListPreference) findPreference(NOTIFICATION_STYLE);
@@ -134,6 +175,109 @@ public class StylePreferences extends SettingsPreferenceFragment {
         mSwitchStyle.setValueIndex(switchStyleValueIndex >= 0 ? switchStyleValueIndex : 0);
         mSwitchStyle.setSummary(mSwitchStyle.getEntry());
         mSwitchStyle.setOnPreferenceChangeListener(this::onSwitchStyleChange);
+    }
+
+    @Override
+    public void onStart() {
+        super.onStart();
+
+        // Listen for changes only while visible.
+        mController.setListener(this);
+
+        // Update the current state since it have changed while not visible.
+        onAutoModeChanged(mController.getAutoMode());
+        onCustomStartTimeChanged(mController.getCustomStartTime());
+        onCustomEndTimeChanged(mController.getCustomEndTime());
+    }
+
+    @Override
+    public void onStop() {
+        super.onStop();
+
+        // Stop listening for state changes.
+        mController.setListener(null);
+    }
+
+    @Override
+    public boolean onPreferenceTreeClick(Preference preference) {
+        if (preference == mStartTimePreference) {
+            showDialog(DIALOG_START_TIME);
+            return true;
+        } else if (preference == mEndTimePreference) {
+            showDialog(DIALOG_END_TIME);
+            return true;
+        }
+        return super.onPreferenceTreeClick(preference);
+    }
+
+    @Override
+    public Dialog onCreateDialog(final int dialogId) {
+        if (dialogId == DIALOG_START_TIME || dialogId == DIALOG_END_TIME) {
+            final LocalTime initialTime;
+            if (dialogId == DIALOG_START_TIME) {
+                initialTime = mController.getCustomStartTime();
+            } else {
+                initialTime = mController.getCustomEndTime();
+            }
+
+            final Context context = getContext();
+            final boolean use24HourFormat = android.text.format.DateFormat.is24HourFormat(context);
+            return new TimePickerDialog(context, new TimePickerDialog.OnTimeSetListener() {
+                @Override
+                public void onTimeSet(TimePicker view, int hourOfDay, int minute) {
+                    final LocalTime time = LocalTime.of(hourOfDay, minute);
+                    if (dialogId == DIALOG_START_TIME) {
+                        mController.setCustomStartTime(time);
+                    } else {
+                        mController.setCustomEndTime(time);
+                    }
+                }
+            }, initialTime.getHour(), initialTime.getMinute(), use24HourFormat);
+        }
+        return super.onCreateDialog(dialogId);
+    }
+
+    @Override
+    public int getDialogMetricsCategory(int dialogId) {
+        switch (dialogId) {
+            case DIALOG_START_TIME:
+                return MetricsEvent.DIALOG_THEME_SET_START_TIME;
+            case DIALOG_END_TIME:
+                return MetricsEvent.DIALOG_THEME_SET_END_TIME;
+            default:
+                return 0;
+        }
+    }
+
+    @Override
+    public void onAutoModeChanged(int autoMode) {
+        mAutoModePreference.setValue(String.valueOf(autoMode));
+
+        int style = Settings.System.getInt(getContext().getContentResolver(),
+                Settings.System.THEME_GLOBAL_STYLE, INDEX_WALLPAPER);
+        final boolean showCustomSchedule = autoMode == MDroidController.AUTO_MODE_CUSTOM;
+        mStartTimePreference.setVisible(showCustomSchedule && style == INDEX_TIME);
+        mEndTimePreference.setVisible(showCustomSchedule && style == INDEX_TIME);
+    }
+
+    @Override
+    public void onCustomStartTimeChanged(LocalTime startTime) {
+        mStartTimePreference.setSummary(getFormattedTimeString(startTime));
+    }
+
+    @Override
+    public void onCustomEndTimeChanged(LocalTime endTime) {
+        mEndTimePreference.setSummary(getFormattedTimeString(endTime));
+    }
+
+    private String getFormattedTimeString(LocalTime localTime) {
+        final Calendar c = Calendar.getInstance();
+        c.setTimeZone(mTimeFormatter.getTimeZone());
+        c.set(Calendar.HOUR_OF_DAY, localTime.getHour());
+        c.set(Calendar.MINUTE, localTime.getMinute());
+        c.set(Calendar.SECOND, 0);
+        c.set(Calendar.MILLISECOND, 0);
+        return mTimeFormatter.format(c.getTime());
     }
 
     private boolean onAccentClick(Preference preference) {
@@ -236,6 +380,10 @@ public class StylePreferences extends SettingsPreferenceFragment {
                 mStyleStatus = StyleStatus.DYNAMIC;
                 break;
         }
+
+        if (mAutoModePreference != null) {
+            mAutoModePreference.setVisible(preference == INDEX_TIME ? true : false);
+        }
     }
 
     private void setupNotificatioStylePref() {
@@ -337,6 +485,10 @@ public class StylePreferences extends SettingsPreferenceFragment {
 
         setupNotificatioStylePref();
         return true;
+    }
+
+    private boolean onAutoModePreferenceChange(Preference preference, Object newValue) {
+        return mController.setAutoMode(Integer.parseInt((String) newValue));
     }
 
     private void reload(){

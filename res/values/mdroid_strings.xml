@@ -806,4 +806,10 @@
     <string name="switch_oneplus">OnePlus</string>
     <string name="switch_telegram">Telegram</string>
 
+    <string name="theme_auto_mode_title">Schedule</string>
+    <string name="theme_auto_mode_custom">Turns on at custom time</string>
+    <string name="theme_auto_mode_twilight">Turns on from sunset to sunrise</string>
+    <string name="theme_start_time_title">Start time</string>
+    <string name="theme_end_time_title">End time</string>
+
 </resources>

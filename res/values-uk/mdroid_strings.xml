@@ -803,4 +803,10 @@
     <string name="switch_style_title">Стиль перемикачів</string>
     <string name="switch_default">За замовчуванням</string>
 
+    <string name="theme_auto_mode_title">"Розклад"</string>
+    <string name="theme_auto_mode_custom">"Вмикається в установлений час"</string>
+    <string name="theme_auto_mode_twilight">"Вмикається від заходу до світанку"</string>
+    <string name="theme_start_time_title">"Час початку"</string>
+    <string name="theme_end_time_title">"Час завершення"</string>
+
 </resources>

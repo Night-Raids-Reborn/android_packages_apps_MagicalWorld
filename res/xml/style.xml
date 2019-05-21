@@ -25,6 +25,20 @@
         android:icon="@drawable/ic_style_auto"
         android:title="@string/style_global_title" />
 
+    <DropDownPreference
+        android:key="theme_auto_mode"
+        android:icon="@drawable/ic_style_time"
+        android:title="@string/theme_auto_mode_title"
+        android:summary="%s" />
+
+    <Preference
+        android:key="theme_start_time"
+        android:title="@string/theme_start_time_title" />
+
+    <Preference
+        android:key="theme_end_time"
+        android:title="@string/theme_end_time_title" />
+
 	<ListPreference
         android:key="notification_style"
         android:icon="@drawable/ic_style_auto"

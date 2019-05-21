@@ -803,4 +803,10 @@
     <string name="switch_style_title">Стиль переключателей</string>
     <string name="switch_default">По умолчанию</string>
 
+    <string name="theme_auto_mode_title">"По расписанию"</string>
+    <string name="theme_auto_mode_custom">"В выбранное время"</string>
+    <string name="theme_auto_mode_twilight">"От заката до рассвета"</string>
+    <string name="theme_start_time_title">"Время включения"</string>
+    <string name="theme_end_time_title">"Время отключения"</string>
+
 </resources>
