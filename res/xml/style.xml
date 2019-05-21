@@ -27,16 +27,18 @@
 
     <DropDownPreference
         android:key="theme_auto_mode"
-        android:icon="@drawable/ic_style_time"
+        android:icon="@drawable/ic_style_time_schedule"
         android:title="@string/theme_auto_mode_title"
         android:summary="%s" />
 
     <Preference
         android:key="theme_start_time"
+        android:icon="@drawable/ic_style_time_start"
         android:title="@string/theme_start_time_title" />
 
     <Preference
         android:key="theme_end_time"
+        android:icon="@drawable/ic_style_time_end"
         android:title="@string/theme_end_time_title" />
 
 	<ListPreference
