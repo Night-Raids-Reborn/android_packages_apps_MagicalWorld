@@ -817,7 +817,7 @@
     <string name="icon_shape_squircle">Заокруглений квадрат</string>
     <string name="icon_shape_circle">Коло</string>
     <string name="icon_shape_teardrop">Краплеподібна</string>
-    <string name="icon_shape_hexagon">Шестиугольник</string>
+    <string name="icon_shape_hexagon">Шестикутник</string>
     <string name="icon_shape_changed_title">Оновити форму значка</string>
     <string name="icon_shape_changed_message">Зміна форми значка вплине лише на нові запущені додатки. Таким чином, рекомендується перезавантажити пристрій, щоб повністю застосувати це налаштування. Якщо після цього деякі додатки все ще використовують стару форму, спробуйте очистити кеш додатків.</string>
 
