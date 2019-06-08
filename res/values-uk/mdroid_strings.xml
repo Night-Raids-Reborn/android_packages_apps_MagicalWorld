@@ -519,6 +519,7 @@
     <string name="network_traffic_units_megabits">Мегабіт в секунду (Мбіт/с)</string>
     <string name="network_traffic_units_kilobytes">Кілобайт в секунду (кБ/с)</string>
     <string name="network_traffic_units_megabytes">Мегабайт в секунду (МБ/с)</string>
+    <string name="network_traffic_units_auto">Авто (Б/с, кБ/с, МБ/с, ГБ/с)</string>
     <string name="network_traffic_show_units">Показати одиниці</string>
     <string name="network_traffic_show_units_summary">Відображати швидкість передачі даних в рядку стану</string>
 

@@ -446,6 +446,7 @@
     <string name="network_traffic_units_megabits">Megabity na sekundę (Mb/s)</string>
     <string name="network_traffic_units_kilobytes">Kilobajty na sekundę (kB/s)</string>
     <string name="network_traffic_units_megabytes">Megabajty na sekundę (MB/s)</string>
+    <string name="network_traffic_units_auto">Auto (B/s, KB/s, MB/s, GB/s)</string>
     <string name="network_traffic_show_units">Pokaż jednostki</string>
     <string name="network_traffic_show_units_summary">Określa, czy wyświetlać jednostki pomiaru ruchu sieciowego na pasku stanu</string>
     <!-- Notification guts kill app button -->
