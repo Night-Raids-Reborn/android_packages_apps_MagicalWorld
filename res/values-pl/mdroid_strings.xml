@@ -149,7 +149,8 @@
     <string name="show_battery_percent_title">Pokaż procentowy stan naładowania baterii</string>
     <string name="battery_style_category_title">Ikona baterii</string>
     <string name="battery_percent_none">Nie pokazuj</string>
-    <string name="battery_percent_outside">Obok ikony</string>
+    <string name="battery_percent_outside">Obok ikony z lewej strony</string>
+    <string name="battery_percent_outside_right">Obok ikony z prawej strony</string>
     <string name="battery_percent_inside">Wewnątrz ikony</string>
     <!-- Buttons backlight timeout -->
     <string name="backlight_timeout_title">Czas podświetlenia przycisków</string>
@@ -250,7 +251,7 @@
     <string name="dialog_delete_message">Usunąć wybrany element?</string>
     <!-- Statusbar ticker -->
     <string name="ticker_screen_title">Pasek powiadomień</string>
-    <string name="ticker_mode_title">Wyświtlaj powiadomiania na pasku stanu</string>
+    <string name="ticker_mode_title">Wyświetlaj powiadomiania na pasku stanu</string>
     <string name="ticker_disabled">Wyłączone</string>
     <string name="ticker_enabled">Tylko powiadomienia</string>
     <string name="ticker_media_enabled">Powiadomienia oraz zmiana muzyki</string>
@@ -660,6 +661,11 @@
     <string name="default_string">Domyślnie</string>
     <string name="slim_recents_hints_footer">Aby wyczyścić wszystkie aplikacje, uszczypnij aplikacje panelu ostatnich aplikacji. Aby zablokować czyszczenie danej aplikacji, naciśnij i przytrzymaj jej ikonę, aby ją oznaczyć gwiazdką.\n\nAby uzyskać dodatkowe funkcje, takie jak podzielenie ekranu lub wyłączanie aplikacji, naciśnij długo w dowolnym miejscu w panelu.</string>
 
+    <string name="slim_recents_mem_display_color">Kolor paska zużycia pamięci</string>
+    <string name="slim_recents_mem_display_text_color">Kolor wyświetlanego tekstu paska zużytej pamięci</string>
+    <string name="slim_recents_mem_display_long_click_clear_title">Długie przytrzymanie paska zużytej pamięci</string>
+    <string name="slim_recents_mem_display_long_click_clear_summary">Wyczyść ostatnie aplikacje poprzez przytrzymanie paska zużytej pamięci</string>
+
     <string name="aosp_recents_title">Panel ostatnich aplikacji w stylu AOSP</string>
 
     <string name="long_press_power_torch_delay_title">Opóźnienie włączenia latarki</string>
@@ -697,5 +703,35 @@
     <string name="lockscreen_date_selection_str_round">Półprzeźroczyste okienko (zaokrąglone rogi)</string>
     <string name="hide_lockscreen_alarm_title">Budzik na ekranie blokady</string>
     <string name="hide_lockscreen_alarm_summary">Ustaw widoczność daty i godziny pobudki na ekranie blokady</string>
+
+    <!-- Switch styles -->
+    <string name="switch_style_title">Styl przełączników szybkich ustawień</string>
+    <string name="switch_default">Domyślny</string>
+    <string name="switch_md2">Material Design 2</string>
+    <string name="switch_oneplus">OnePlus</string>
+    <string name="switch_telegram">Telegram</string>
+
+    <string name="theme_auto_mode_title">Harmonogram</string>
+    <string name="theme_auto_mode_custom">Motyw włącza się o ustawionej godzinie</string>
+    <string name="theme_auto_mode_twilight">Włącza się od zachodu do wschodu słońca</string>
+    <string name="theme_start_time_title">Włącz o</string>
+    <string name="theme_end_time_title">Wyłącz o</string>
+
+    <!-- Adaptive icon shape -->
+    <string name="icon_shape_title">Kształt ikon aplikacji</string>
+    <string name="icon_shape_system_default">Domyślne systemowe</string>
+    <string name="icon_shape_square">Kwadratowe</string>
+    <string name="icon_shape_rounded_square">Zaokrąglone kwadratowe</string>
+    <string name="icon_shape_squircle">Obłe</string>
+    <string name="icon_shape_circle">Okrągłe</string>
+    <string name="icon_shape_teardrop">Kształt łezki</string>
+    <string name="icon_shape_hexagon">Sześciokątne</string>
+    <string name="icon_shape_changed_title">Zaktualizuj kształt ikon</string>
+    <string name="icon_shape_changed_message">Zmiana kształtu ikon wpłynie tylko na nowo uruchomione aplikacje. Dlatego zaleca się ponowne uruchomienie urządzenia, aby w pełni zastosować zmianę kształtu ikon. Jeśli niektóre aplikacje nadal używają starego kształtu, spróbuj wyczyścić pamięć podręczną aplikacji.</string>
+
+    <string name="reboot_dialog_ok">Uruchom ponownie</string>
+    <string name="reboot_dialog_cancel">@string/cancel</string>
+    <string name="soft_reboot_title">Uruchamianie ponownie</string>
+    <string name="soft_reboot_message">Trwa miękki restart, proszę o cierpliwość</string>
 
 </resources>
