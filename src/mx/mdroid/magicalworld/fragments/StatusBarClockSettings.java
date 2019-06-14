@@ -160,6 +160,7 @@ public class StatusBarClockSettings extends SettingsPreferenceFragment implement
         int showClockFont = Settings.System.getInt(resolver,
                 Settings.System.STATUS_BAR_CLOCK_FONT_STYLE, 0);
         mClockFontStyle.setValue(String.valueOf(showClockFont));
+        mClockFontStyle.setSummary(mClockFontStyle.getEntry());
         mClockFontStyle.setOnPreferenceChangeListener(this);
     }
 
