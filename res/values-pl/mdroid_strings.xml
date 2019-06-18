@@ -210,7 +210,7 @@
     <string name="notification_black">Czarny</string>
 
     <!-- QS tile styles -->
-    <string name="qs_tile_style_title">Styl przełączników szybkich ustawień</string>
+    <string name="qs_tile_style_title">Styl przełączników systemowych</string>
     <string name="qstile_default">Domyślny</string>
     <string name="qstile_circle">Okrągłe</string>
     <string name="qstile_circle_trim">Okrągłe z wypełnieniem</string>
@@ -346,6 +346,9 @@
     <!-- Disable QS on secure Lockscreen -->
     <string name="lockscreen_qs_disabled_title">Brak szybkich ustawień na zabezpieczonym ekranie blokady</string>
     <string name="lockscreen_qs_disabled_summary">Wyłącz szybkie ustawienia na zabezpieczonym ekranie blokady. Funkcja ta powoduje ukrycie skrótów ekranu blokady.</string>
+    <!-- Hide Lockscreen shortcuts on secure Lockscreen -->
+    <string name="lockscreen_hide_shortcuts_title">Skróty ekranu blokady</string>
+    <string name="lockscreen_hide_shortcuts_summary">Ukryj skróty na ekranie blokady chronionym hasłem</string>
     <string name="units_ms">" ms"</string>
     <string name="screenshot_delay_title">Opóźnienie zrzutu ekranu</string>
     <!-- Seekbar default text -->
@@ -718,7 +721,7 @@
     <string name="theme_end_time_title">Wyłącz o</string>
 
     <!-- Adaptive icon shape -->
-    <string name="icon_shape_title">Kształt ikon aplikacji</string>
+    <string name="icon_shape_title">Kształt ikon szybkich ustawień</string>
     <string name="icon_shape_system_default">Domyślne systemowe</string>
     <string name="icon_shape_square">Kwadratowe</string>
     <string name="icon_shape_rounded_square">Zaokrąglone kwadratowe</string>
