@@ -737,4 +737,32 @@
     <string name="soft_reboot_title">Uruchamianie ponownie</string>
     <string name="soft_reboot_message">Trwa miękki restart, proszę o cierpliwość</string>
 
+    <string name="status_bar_clock_font_size_title">Rozmiar czcionki</string>
+    <string name="status_bar_clock_font_style_title">Czcionka</string>
+    <string name="status_bar_clock_font_normal">Normalna</string>
+    <string name="status_bar_clock_font_italic">Kursywa</string>
+    <string name="status_bar_clock_font_bold">Pogrubiona</string>
+    <string name="status_bar_clock_font_bold_italic">Pogrubiona kursywa</string>
+    <string name="status_bar_clock_font_light">Lekka</string>
+    <string name="status_bar_clock_font_light_italic">Lekka kursywa</string>
+    <string name="status_bar_clock_font_thin">Cienka</string>
+    <string name="status_bar_clock_font_thin_italic">Cienka kursywa</string>
+    <string name="status_bar_clock_font_condensed">Zwarta</string>
+    <string name="status_bar_clock_font_condensed_italic">Zwarta kursywa</string>
+    <string name="status_bar_clock_font_condensed_light">Zwarta lekka</string>
+    <string name="status_bar_clock_font_condensed_light_italic">Zwarta lekka kursywa</string>
+    <string name="status_bar_clock_font_condensed_bold">Zwarta pogrubiona</string>
+    <string name="status_bar_clock_font_condensed_bold_italic">Zwarta pogrubiona kursywa</string>
+    <string name="status_bar_clock_font_medium">Średnia</string>
+    <string name="status_bar_clock_font_medium_italic">Średnia kurywa</string>
+    <string name="status_bar_clock_font_black">Gruba</string>
+    <string name="status_bar_clock_font_black_italic">Gruba kursywa</string>
+    <string name="status_bar_clock_font_dancingscript">Dancing Script</string>
+    <string name="status_bar_clock_font_dancingscript_bold">Dancing Script pogrubiona</string>
+    <string name="status_bar_clock_font_comingsoon">Coming Soon</string>
+    <string name="status_bar_clock_font_notoserif">Noto Serif</string>
+    <string name="status_bar_clock_font_notoserif_italic">Noto Serif kursywa</string>
+    <string name="status_bar_clock_font_notoserif_bold">Noto Serif pogrubiona</string>
+    <string name="status_bar_clock_font_notoserif_bold_italic">NotoSerif pogrubiona kursywa</string>
+
 </resources>
