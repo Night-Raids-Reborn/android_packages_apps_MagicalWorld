@@ -853,4 +853,6 @@
     <string name="status_bar_clock_font_notoserif_bold">NotoSerif жирний</string>
     <string name="status_bar_clock_font_notoserif_bold_italic">NotoSerif жирний курсив</string>
 
+    <string name="current_color">Поточний колір</string>
+
 </resources>
