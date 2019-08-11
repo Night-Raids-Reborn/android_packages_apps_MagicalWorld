@@ -84,6 +84,10 @@
     <string name="pixel_navbar_anim_title">Включить анимацию Pixel для панели навигации</string>
     <string name="pixel_navbar_anim_summary">Включает анимацию Pixel для кнопки \"Домой\"</string>
 
+    <!-- Three finger gesture  -->
+    <string name="three_finger_gesture_title">Снимок экрана свайпом</string>
+    <string name="three_finger_gesture_summary">Проведите тремя пальцами, чтобы сделать снимок экрана</string>
+
     <!-- Volume button orientation based on current rotation -->
     <string name="swap_volume_buttons_title">Менять местами кнопки громкости</string>
     <string name="swap_volume_buttons_summary">Менять назначение кнопок регулировки громкости согласно ориентации экрана</string>

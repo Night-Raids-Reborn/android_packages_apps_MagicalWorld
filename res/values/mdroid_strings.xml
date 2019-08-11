@@ -84,6 +84,10 @@
     <string name="pixel_navbar_anim_title">Enable Pixel navbar animation</string>
     <string name="pixel_navbar_anim_summary">Enables customized Pixel home button animation</string>
 
+    <!-- Three finger gesture  -->
+    <string name="three_finger_gesture_title">Swipe to screenshot</string>
+    <string name="three_finger_gesture_summary">Swipe with three fingers to screenshot</string>
+
     <!-- Volume button orientation based on current rotation -->
     <string name="swap_volume_buttons_title">Swap volume rocker orientation</string>
     <string name="swap_volume_buttons_summary">Adjust the rocker orientation based on current rotation</string>
